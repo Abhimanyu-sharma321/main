@@ -25,20 +25,23 @@ export const Slides = () => {
     const slideImages = [
 
         {
+            id: 1,
             image: slide1,
             caption: 'Slide 1'
         },
 
         {
+            id: 2,
             image: slide2,
             caption: 'Slide 1'
         },
         {
+            id: 3,
             image: slide3,
             caption: 'Slide 1'
         },
-        
-    ];  
+
+    ];
     return (
         <>
             <div className="slide-container    ">

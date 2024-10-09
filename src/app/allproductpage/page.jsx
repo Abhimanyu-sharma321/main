@@ -38,14 +38,14 @@ const Allproductpage = () => {
 
             </section> */}
 
-      
+
 
       <section className="w-full h-full mt-10  ">
-        
-        
+
+
         <div className="w-full h-full  grid grid-cols-3 p-32 ">
-          {_ALL_PRODUCT_IMAGES.map((product) => (
-            <figure className="p-20 ">
+          {_ALL_PRODUCT_IMAGES.map((product, i) => (
+            <figure className="p-20 " key={i + 1}>
               <Image
                 src={product?.image}
                 className="bg-black hover:scale-100 object-contain"

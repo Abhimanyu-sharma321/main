@@ -1,5 +1,5 @@
 import brandlogo from "../assets/Logos/ applechiplogo.png"
-import {apple14,apple15,apple16,apple16Pro,gamingheadPhone1,iphoneSe,jackandjones,logo, pumashoe1, trending1} from"../assets/Index";
+import { apple14, apple15, apple16, apple16Pro, gamingheadPhone1, iphoneSe, jackandjones, logo, pumashoe1, trending1 } from "../assets/Index";
 
 /************************************************FLOATING-MENUEBAR*****************************************************************************************************************************************/
 import {
@@ -11,7 +11,7 @@ import {
     IconTerminal2,
 } from "@tabler/icons-react";
 
-export const  _ALL_PRODUCT_IMAGES = [
+export const _ALL_PRODUCT_IMAGES = [
     {
         id: 1,
         image: apple14,
@@ -104,104 +104,104 @@ export const  _ALL_PRODUCT_IMAGES = [
 // **************************************************HOME PRODUCTS IMAGES ******************************************************************************************************************************
 
 
- export const _HOME_PRODUCT_IMAGES=[
-    
-    
+export const _HOME_PRODUCT_IMAGES = [
+
+
     {
-    id:1,
-    name:"IPhone14",
-    image:apple14,
-    // category:"electronics",
-    category_Id:100,
-    previous_Price:"$11500",
-    price:"$9300",
-    purchace_count:900,
-    title:"Add to Cart",
+        id: 1,
+        name: "IPhone14",
+        image: apple14,
+        // category:"electronics",
+        category_Id: 100,
+        previous_Price: "$11500",
+        price: "$9300",
+        purchace_count: 900,
+        title: "Add to Cart",
 
-},
-{
+    },
+    {
 
-    id:2,
-    name:"Jack & Jones ",
-    image: jackandjones,
-    category:"clothing",
-    category_Id:101,
-    previous_Price:"$18000",
-    purchace_count:1200 ,
+        id: 2,
+        name: "Jack & Jones ",
+        image: jackandjones,
+        category: "clothing",
+        category_Id: 101,
+        previous_Price: "$18000",
+        purchace_count: 1200,
 
-    price:"$12800",
-    title:"Add to Cart",
-},
-{
+        price: "$12800",
+        title: "Add to Cart",
+    },
+    {
 
-    id:3,
-    name:"Puma Shoes",
-    image:  pumashoe1,
-    category:"footwear",
-    category_Id:102,
-    previous_Price:"$18000",
-    price:"$10800",
-    purchace_count:1900 ,
+        id: 3,
+        name: "Puma Shoes",
+        image: pumashoe1,
+        category: "footwear",
+        category_Id: 102,
+        previous_Price: "$18000",
+        price: "$10800",
+        purchace_count: 1900,
 
-    title:"Add to Cart",
-},
+        title: "Add to Cart",
+    },
 
-{
+    {
 
-    id:4,
-    name:" Gaming HeadPhone",
-    image:gamingheadPhone1,
-    category:"gaming",
-    category_Id:103,
-    previous_Price:"$18000",
-    price:"$1200",
-    purchace_count:400 ,
+        id: 4,
+        name: " Gaming HeadPhone",
+        image: gamingheadPhone1,
+        category: "gaming",
+        category_Id: 103,
+        previous_Price: "$18000",
+        price: "$1200",
+        purchace_count: 400,
 
-    title:"Add to Cart",
-},
+        title: "Add to Cart",
+    },
 
 
- 
-{
-    id:5,
-    name:"JBL Earphone",
-    image: trending1,
-    category:"trending",
-    category_Id:104,
-    previous_Price:"$800",
-    price:"$600",
-    purchace_count:1000 ,
 
-    title:"Add to Cart",
-}
+    {
+        id: 5,
+        name: "JBL Earphone",
+        image: trending1,
+        category: "trending",
+        category_Id: 104,
+        previous_Price: "$800",
+        price: "$600",
+        purchace_count: 1000,
+
+        title: "Add to Cart",
+    }
 
 
 ]
 
-export const _ACCESSORIES=[{
-    id:1,
-    name:"JBL Earphone",
+export const _ACCESSORIES = [{
+    id: 6,
+    name: "JBL Earphone",
     image: trending1,
-    category:"trending",
-    category_Id:104,
-    previous_Price:"$800",
-    price:"$600",
-    purchace_count:1000 ,
+    category: "trending",
+    category_Id: 104,
+    previous_Price: "$800",
+    price: "$600",
+    purchace_count: 1000,
 
-    title:"Add to Cart",
+    title: "Add to Cart",
 },
 {
 
-    id:2,
-    name:" Gaming HeadPhone",
-    image:gamingheadPhone1,
-    category:"gaming",
-    category_Id:103,
-    previous_Price:"$18000",
-    price:"$1200",
-    purchace_count:400 ,
+    id: 7,
+    name: " Gaming HeadPhone",
+    image: gamingheadPhone1,
+    category: "gaming",
+    category_Id: 103,
+    previous_Price: "$18000",
+    price: "$1200",
+    purchace_count: 400,
 
-    title:"Add to Cart",
+    title: "Add to Cart",
 },
 
 
@@ -212,7 +212,7 @@ export const _ACCESSORIES=[{
 
 
 /****************************************************Header-Floating-Menues*********************************************************************************************************************/
- 
- 
+
+
 
 
