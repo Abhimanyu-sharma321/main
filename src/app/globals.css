@@ -67,3 +67,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.slide-container .indicators li {
+  transform: scale(3);
+  margin: 0 15px !important;
+  & button{
+    width: 100%;
+  }
+}

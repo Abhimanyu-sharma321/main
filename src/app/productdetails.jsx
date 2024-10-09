@@ -1,10 +1,5 @@
-import mackbookImage from "../assets/ProductImages/mackBook.png"
 import brandlogo from "../assets/Logos/ applechiplogo.png"
-import apple14 from "../assets/ProductImages/apple14.png"
-import apple15 from "../assets/ProductImages/iphone15.png"
-import apple16 from "../assets/ProductImages/iphone16.png"
-import apple16Pro from "../assets/ProductImages/iphone16pro.png"
-import iphoneSe from "../assets/ProductImages/iphonese.png"
+import {apple14,apple15,apple16,apple16Pro,gamingheadPhone1,iphoneSe,jackandjones,logo, pumashoe1, trending1} from"../assets/Index";
 
 /************************************************FLOATING-MENUEBAR*****************************************************************************************************************************************/
 import {
@@ -16,21 +11,23 @@ import {
     IconTerminal2,
 } from "@tabler/icons-react";
 
-export const _Home_Page_Products = [
+export const  _ALL_PRODUCT_IMAGES = [
     {
         id: 1,
         image: apple14,
         brandlogo: brandlogo,
-        title: " 8-Core CPU8-Core GPU8GB Unified Memory256GB SSD Storage footnote ¹",
-        description: "16-core Neural Engine13.6-inch Liquid Retina display with True Tone²1080p FaceTime HD cameraMagSafe 3 charging portTwo Thunderbolt / USB 4portsSupport for up to two external displays (with laptop lid closed)Magic Keyboard with Touch IDForce Touch trackpad30W USB-C Power Adapter",
-        price: "$1,099.00",
-        emiOption: "$91.58/mo.per month for 12 mo.monthsFootnote*",
-        offeroncard: "Get 3% Daily Cash with Apple Card:-",
-        suggetion: "Apple Trade InGet credit toward a new Mac when you trade in your eligible computer. Or recycle it for free.Footnote◊◊",
-        buttontext: "Select",
-        hoverImage: apple14,
-        belowtext: "(OR)"
+        title: "I phone 14",
 
+        // title: " 8-Core CPU8-Core GPU8GB Unified Memory256GB SSD Storage footnote ¹",
+        // description: "16-core Neural Engine13.6-inch Liquid Retina display with True Tone²1080p FaceTime HD cameraMagSafe 3 charging portTwo Thunderbolt / USB 4portsSupport for up to two external displays (with laptop lid closed)Magic Keyboard with Touch IDForce Touch trackpad30W USB-C Power Adapter",
+        // price: "$1,099.00",
+        // emiOption: "$91.58/mo.per month for 12 mo.monthsFootnote*",
+        // offeroncard: "Get 3% Daily Cash with Apple Card:-",
+        description: "The Ultimate Iphone",
+        price: "From:-$700",
+        details: "6.9″ or 6.3″Super Retina XDR display footnote ¹ProMotion technologyAlways- On display",
+        belowtext: "(Details)",
+        buttontext: "Select",
     },
 
     {
@@ -101,66 +98,104 @@ export const _Home_Page_Products = [
 
     },
 ];
+
+
+
+// **************************************************HOME PRODUCTS IMAGES ******************************************************************************************************************************
+
+
+ export const _HOME_PRODUCT_IMAGES=[
+    
+    
+    {
+    id:1,
+    name:"IPhone14",
+    image:apple14,
+    // category:"electronics",
+    category_Id:100,
+    previous_Price:"$11500",
+    price:"$9300",
+    purchace_count:900,
+    title:"Buy Now",
+
+},
+{
+
+    id:2,
+    name:"Jack & Jones ",
+    image: jackandjones,
+    category:"clothing",
+    category_Id:101,
+    previous_Price:"$18000",
+    purchace_count:1200 ,
+
+    price:"$12800",
+    title:"Buy Now",
+},
+{
+
+    id:3,
+    name:"Puma Shoes",
+    image:  pumashoe1,
+    category:"footwear",
+    category_Id:102,
+    previous_Price:"$18000",
+    price:"$10800",
+    purchace_count:1900 ,
+
+    title:"Buy Now",
+},
+
+{
+
+    id:4,
+    name:" Gaming HeadPhone",
+    image:gamingheadPhone1,
+    category:"gaming",
+    category_Id:103,
+    previous_Price:"$18000",
+    price:"$1200",
+    purchace_count:400 ,
+
+    title:"Buy Now",
+},
+
+
+ 
+{
+    id:6,
+    name:"JBL Earphone",
+    image: trending1,
+    category:"trending",
+    category_Id:104,
+    previous_Price:"$800",
+    price:"$600",
+    purchace_count:1000 ,
+
+    title:"Buy Now",
+}
+
+
+]
+
+export const _ACCESSORIES=[{
+    id:1,
+    name:"JBL Earphone",
+    image: trending1,
+    category:"trending",
+    category_Id:104,
+    previous_Price:"$800",
+    price:"$600",
+    purchace_count:1000 ,
+
+    title:"Buy Now",
+}]
+
+
+
+
 /****************************************************Header-Floating-Menues*********************************************************************************************************************/
-export const links = [
-
-
-    {
-        title: "Home",
-        icon: (
-            <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-        href: "#",
-    },
-
-    {
-        title: "Products",
-        icon: (
-            <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-        href: "#",
-    },
-    {
-        title: "Components",
-        icon: (
-            <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-        href: "#",
-    },
-    {
-        title: "Aceternity UI",
-        icon: (
-            <Image
-                src="https://assets.aceternity.com/logo-dark.png"
-                width={20}
-                height={20}
-                alt="Aceternity Logo" />
-        ),
-        href: "#",
-    },
-    {
-        title: "Changelog",
-        icon: (
-            <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-        href: "#",
-    },
-
-    {
-        title: "Twitter",
-        icon: (
-            <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-        href: "#",
-    },
-    {
-        title: "GitHub",
-        icon: (
-            <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-        href: "#",
-    },
-];
-
+ 
+ 
 
 
