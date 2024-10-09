@@ -1,5 +1,5 @@
 import brandlogo from "../assets/Logos/ applechiplogo.png"
-import { apple14, apple15, apple16, apple16Pro, gamingheadPhone1, iphoneSe, jackandjones, logo, pumashoe1, trending1 } from "../assets/Index";
+import { apple14, apple15, apple16, apple16Pro, gamingheadPhone1, iphone142, iphone143, iphoneSe, jackandjones, logo, pumashoe1, trending1 } from "../assets/Index";
 
 /************************************************FLOATING-MENUEBAR*****************************************************************************************************************************************/
 import {
@@ -113,6 +113,7 @@ export const _HOME_PRODUCT_IMAGES = [
         image: apple14,
         // category:"electronics",
         category_Id: 100,
+        sliderImages: [iphone142, iphone143, apple14],
         previous_Price: "$11500",
         price: "$9300",
         purchace_count: 900,
@@ -128,6 +129,7 @@ export const _HOME_PRODUCT_IMAGES = [
         category_Id: 101,
         previous_Price: "$18000",
         purchace_count: 1200,
+        sliderImages: [iphone142, iphone143, apple14],
 
         price: "$12800",
         title: "Add to Cart",
@@ -142,6 +144,7 @@ export const _HOME_PRODUCT_IMAGES = [
         previous_Price: "$18000",
         price: "$10800",
         purchace_count: 1900,
+        sliderImages: [iphone142, iphone143, apple14],
 
         title: "Add to Cart",
     },
@@ -156,6 +159,7 @@ export const _HOME_PRODUCT_IMAGES = [
         previous_Price: "$18000",
         price: "$1200",
         purchace_count: 400,
+        sliderImages: [iphone142, iphone143, apple14],
 
         title: "Add to Cart",
     },
@@ -171,6 +175,7 @@ export const _HOME_PRODUCT_IMAGES = [
         previous_Price: "$800",
         price: "$600",
         purchace_count: 1000,
+        sliderImages: [iphone142, iphone143, apple14],
 
         title: "Add to Cart",
     }

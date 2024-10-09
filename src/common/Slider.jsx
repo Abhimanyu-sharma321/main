@@ -15,7 +15,7 @@ export const Slides = () => {
         color: '#000000'
     }
 
-    const divStyle = {
+    var divStyle = {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -55,4 +55,41 @@ export const Slides = () => {
             </div>
         </>
     )
+}
+
+
+export const ProductSlider = ({ image, indicators }) => {
+
+
+
+    var divStyle = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundSize: 'cover',
+
+    }
+    let productSliders = JSON.parse(localStorage.getItem("singleProducts"))
+    return (
+
+        <div>
+
+
+            <Slide autoplay={true} indicators={true}>
+
+                {
+                    productSliders?.sliderImages?.map((item, index) => (
+                        <div style={{ ...divStyle }} key={index + 1}>
+                            <figure className='w-full h-full p-32'>
+                                <Image src={item} alt='imaging' className='w-1/2 h-auto object-cover' />
+                            </figure>
+                        </div>
+                    ))
+                }
+
+            </Slide>
+        </div>
+    )
+
+
 }

@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import UseSingleProductHook from "../../../Hooks/SingleProductHok"
+import { ProductSlider } from "@/common/Slider"
 
 const SingleProductPage = () => {
 
@@ -12,7 +13,8 @@ const SingleProductPage = () => {
         <>
             <section className="flex gap-16 w-full h-full">
                 <div className="w-1/2">
-                    <Image src={newData.image} className="min-w-96" />
+                    {/* <Image src={newData.image} className="min-w-96" /> */}
+                    <ProductSlider />
 
                 </div>
                 <div className="w-1/2">
