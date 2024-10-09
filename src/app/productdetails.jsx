@@ -116,7 +116,7 @@ export const  _ALL_PRODUCT_IMAGES = [
     previous_Price:"$11500",
     price:"$9300",
     purchace_count:900,
-    title:"Buy Now",
+    title:"Add to Cart",
 
 },
 {
@@ -130,7 +130,7 @@ export const  _ALL_PRODUCT_IMAGES = [
     purchace_count:1200 ,
 
     price:"$12800",
-    title:"Buy Now",
+    title:"Add to Cart",
 },
 {
 
@@ -143,7 +143,7 @@ export const  _ALL_PRODUCT_IMAGES = [
     price:"$10800",
     purchace_count:1900 ,
 
-    title:"Buy Now",
+    title:"Add to Cart",
 },
 
 {
@@ -157,13 +157,13 @@ export const  _ALL_PRODUCT_IMAGES = [
     price:"$1200",
     purchace_count:400 ,
 
-    title:"Buy Now",
+    title:"Add to Cart",
 },
 
 
  
 {
-    id:6,
+    id:5,
     name:"JBL Earphone",
     image: trending1,
     category:"trending",
@@ -172,7 +172,7 @@ export const  _ALL_PRODUCT_IMAGES = [
     price:"$600",
     purchace_count:1000 ,
 
-    title:"Buy Now",
+    title:"Add to Cart",
 }
 
 
@@ -188,8 +188,25 @@ export const _ACCESSORIES=[{
     price:"$600",
     purchace_count:1000 ,
 
-    title:"Buy Now",
-}]
+    title:"Add to Cart",
+},
+{
+
+    id:2,
+    name:" Gaming HeadPhone",
+    image:gamingheadPhone1,
+    category:"gaming",
+    category_Id:103,
+    previous_Price:"$18000",
+    price:"$1200",
+    purchace_count:400 ,
+
+    title:"Add to Cart",
+},
+
+
+
+]
 
 
 

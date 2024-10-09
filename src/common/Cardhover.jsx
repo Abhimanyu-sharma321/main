@@ -26,7 +26,7 @@ const HoverComponent = () => {
             title: "Accessories",
             // description:
             // "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-            link: "/allproductpage",
+            link: "/allproductpage/accessories",
 
         },
         {

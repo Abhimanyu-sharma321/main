@@ -72,7 +72,7 @@ const handleClick=(productid)=>{
             <section className="bg-black ">
                
 
-                        <HoverComponent onClick={()=>handleClick(item.category_Id)} />
+                        <HoverComponent/>
 
                
             </section>
