@@ -28,47 +28,44 @@ export function Home() {
       <section>
         <Slides />
       </section>
-      <section className="w-full h-full  ">
-        <div className=" w-full h-full     ">
+      <section className="w-full   h-full">
+        <div className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center     ">
           {_HOME_PRODUCT_IMAGES.map((product) => (
             <>
-              <div className="flex">
-                <figure
-                  className="w-full  h-full grid grid-cols-3 p-32 gap-32 border border-black text-center "
-                  key={product?.id}
-                  onClick={() => handleClick(product)}
-                >
-                  <Image
-                    src={product?.image}
-                    className="bg-white hover:scale-100 w-full h-full max-h-60 max-w-96 object-contain"
-                  />
-                  <div className="mt-8">
-                    <h2 className={`${_COMMONHEADING}`}>{product.name}</h2>
-                    <p className={`${PARAGRAPH_CLASS}`}>
-                      {product.purchace_count}K+ bought in last month
-                    </p>
+              <div
+                className="w-full   "
+                key={product?.id}
+                onClick={() => handleClick(product)}
+              >
+                <Image
+                  src={product?.image}
+                  className="bg-white hover:scale-100 w-full h-full max-h-60 max-w-96 object-contain"
+                />
+                <div className="mt-8">
+                  <h2 className={`${_COMMONHEADING}`}>{product.name}</h2>
+                  <p className={`${PARAGRAPH_CLASS}`}>
+                    {product.purchace_count}K+ bought in last month
+                  </p>
 
-                    <p className={`${PARAGRAPH_CLASS} mt-10`}>
-                      <i>Previous_Price</i> {product.previous_Price}
-                    </p>
-                    <p className={`${PARAGRAPH_CLASS} mt-10`}>
-                      Today_Price:-{product.price}
-                    </p>
-                  </div>
-                </figure>
-                <footer>
-                  <button
-                    className="grayscale-0  mt-5 w-52 h-16 bg-sky-800 text-white font-bold hover:bg-white hover:text-black hover:border border-black rounded-sm"
-                    onClick={() => AddtoCart(product)}
-                  >
-                    {product.title}
-                  </button>
-                </footer>
+                  <p className={`${PARAGRAPH_CLASS} mt-10`}>
+                    <i>Previous_Price</i> {product.previous_Price}
+                  </p>
+                  <p className={`${PARAGRAPH_CLASS} mt-10`}>
+                    Today_Price:-{product.price}
+                  </p>
+                </div>
+                <button
+                  className="grayscale-0  mt-5 w-52 h-16 bg-sky-800 text-white font-bold hover:bg-white hover:text-black hover:border border-black rounded-sm"
+                  onClick={() => AddtoCart(product)}
+                >
+                  {product.title}
+                </button>
               </div>
             </>
           ))}
         </div>
       </section>
+
       <section className="bg-black ">
         <HoverComponent />
       </section>

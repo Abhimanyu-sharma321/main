@@ -28,6 +28,7 @@ export const _ALL_PRODUCT_IMAGES = [
         details: "6.9″ or 6.3″Super Retina XDR display footnote ¹ProMotion technologyAlways- On display",
         belowtext: "(Details)",
         buttontext: "Select",
+
     },
 
     {
@@ -203,40 +204,53 @@ export const _HOME_PRODUCT_IMAGES = [
             { id: 5, name: "NekType", value: "::RoundNeck" }
         ],
         serviceslogo: [SecureLogo, FreeLogo, returnLogo, CashLogo, DeliveryLogo],
+        title: "Add to Cart",
 
     },
     {
 
         id: 3,
         name: "Puma Shoes",
+        description: "Puma Unisex Smash v2 Buck Sneaker",
         image: pumashoe1,
         category: "footwear",
+        off_price: "-52% ₹2,138",
+        emistartmessage: "EMI starts at ₹104. No Cost EMI available ",
+        purchace_count: "900+  bought in past month  ",
         category_Id: 102,
         previous_Price: "$18000",
         price: "$10800",
-        purchace_count: 1900,
+        purchace_count: "1900  bought in past month",
+
         sliderImages: [
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/411KYkCv0cL._SY695_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/31tmXoENdEL._SS40_.jpg"
             },
 
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/41y3AnUk2GL._SY695_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/3185vvfa-GL._SS40_.jpg"
             },
 
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/41-Fzx-FG8L._SY695_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/314mgZsqEwL._SS40_.jpg"
             },
 
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/61A+1zRDZGL._SY695_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/41TvERnX-KL._SS40_.jpg"
             },
         ],
-
+        serviceslogo: [SecureLogo, FreeLogo, returnLogo, CashLogo, DeliveryLogo],
+        aboutthisitem: [
+            { id: 1, name: "Style Name:", value: "Sneaker" },
+            { id: 2, name: "Model Name", value: "Smash V2 Buck" },
+            { id: 3, name: "Brand Color", value: "Black " },
+            { id: 4, name: " Material", value: "Synthetic" },
+            { id: 5, name: "Care Instructions", value: "Wipe with a clean dry cloth" }
+        ],
         title: "Add to Cart",
     },
 
@@ -250,6 +264,10 @@ export const _HOME_PRODUCT_IMAGES = [
         previous_Price: "$18000",
         price: "$1200",
         purchace_count: 400,
+
+
+        serviceslogo: [SecureLogo, FreeLogo, returnLogo, CashLogo, DeliveryLogo],
+
         sliderImages: [
             {
                 original: "",

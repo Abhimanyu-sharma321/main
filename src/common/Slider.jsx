@@ -79,8 +79,8 @@ export const ProductSlider = ({ image, indicators }) => {
 
 
 
-        <div style={{ ...divStyle }} className='w-[900px]    p-20 mb-20 border-black'>
-            <ImageGallery items={images} />
+        <div style={{ ...divStyle }} className='w-[900px]    p-20 mb-20 border-black object-cover'>
+            <ImageGallery items={images} thumbnailPosition={"left"} showFullscreenButton={false} showBullets={true} showNav={false} />
         </div>
     )
 

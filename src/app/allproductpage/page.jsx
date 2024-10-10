@@ -11,8 +11,10 @@ import { _ALL_PRODUCT_IMAGES } from "../productdetails";
 import UseAddToCartHook from "../../../Hooks/useAddtocartHook";
 import Page from "../home/page";
 import HoverComponent from "@/common/Cardhover";
+import UseSingleProductHook from "../../../Hooks/SingleProductHok";
 const Allproductpage = () => {
   const { AddtoCart } = UseAddToCartHook();
+  const { handleClick } = UseSingleProductHook()
   const [action, setAction] = useState("apple");
   const [active, setActive] = useState(null);
   const _COMMONHEADING = "text-2xl h-auto w-auto font-semibold";
@@ -45,7 +47,10 @@ const Allproductpage = () => {
 
         <div className="w-full h-full  grid grid-cols-3 p-32 ">
           {_ALL_PRODUCT_IMAGES.map((product, i) => (
-            <figure className="p-20 " key={i + 1}>
+            <figure className="p-20 " key={i + 1}
+              onClick={() => handleClick(product)}
+
+            >
               <Image
                 src={product?.image}
                 className="bg-black hover:scale-100 object-contain"
