@@ -58,7 +58,7 @@ export function Home() {
                 </figure>
                 <footer>
                   <button
-                    className="mt-5 w-52 h-16 bg-sky-800 text-white font-bold hover:bg-white hover:text-black hover:border border-black rounded-sm"
+                    className="grayscale-0  mt-5 w-52 h-16 bg-sky-800 text-white font-bold hover:bg-white hover:text-black hover:border border-black rounded-sm"
                     onClick={() => AddtoCart(product)}
                   >
                     {product.title}

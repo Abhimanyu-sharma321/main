@@ -1,5 +1,5 @@
 import brandlogo from "../assets/Logos/ applechiplogo.png"
-import { apple14, apple15, apple16, apple16Pro, gamingheadPhone1, iphone142, iphone143, iphoneSe, jackandjones, logo, pumashoe1, trending1 } from "../assets/Index";
+import { apple14, apple15, apple16, apple16Pro, CashLogo, DeliveryLogo, FreeLogo, gamingheadPhone1, iphone142, iphone143, iphoneSe, jackandjones, jackandjones2, jackandjones3, logo, pumashoe1, returnLogo, SecureLogo, trending1 } from "../assets/Index";
 
 /************************************************FLOATING-MENUEBAR*****************************************************************************************************************************************/
 import {
@@ -101,7 +101,7 @@ export const _ALL_PRODUCT_IMAGES = [
 
 
 
-// **************************************************HOME PRODUCTS IMAGES ******************************************************************************************************************************
+// **************************************************HOME PRODUCTS IMAGES ************************************************************************************************************************************************************###########################################################################################################################################################################################################################################################################################################################################
 
 
 export const _HOME_PRODUCT_IMAGES = [
@@ -112,12 +112,57 @@ export const _HOME_PRODUCT_IMAGES = [
         name: "IPhone14",
         image: apple14,
         // category:"electronics",
+        description: "Apple iPhone 14 (128 GB) - Midnight",
         category_Id: 100,
-        sliderImages: [iphone142, iphone143, apple14],
+        taxmessage: "Inclusive of all taxes",
         previous_Price: "$11500",
-        price: "$9300",
-        purchace_count: 900,
+        price: "-790000",
+        cut_price: "79,900.00M.R.P.: ₹79,900",
+        single_price: "₹59,900.00 with 25 percent savings-25% ₹59,900",
+        off_price: "-25% ₹59,900",
+        emistartmessage: "EMI starts at ₹2,904. No Cost EMI available ",
+        purchace_count: "900+  bought in past month  ",
+        serviceslogo: [SecureLogo, FreeLogo, returnLogo, CashLogo, DeliveryLogo],
+        sliderImages: [
+            {
+                original: "https://m.media-amazon.com/images/I/61WAINtWPPL._SL1500_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/31F7pQ4P6KL._SX38_SY50_CR,0,0,38,50_.jpg"
+
+            },
+
+            {
+                original: "https://m.media-amazon.com/images/I/81mC15lI-2L._SX679_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/410kaVAH0sL._SX38_SY50_CR,0,0,38,50_.jpg"
+            },
+
+            {
+                original: "https://m.media-amazon.com/images/I/61nYJlEhnhL._SL1500_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/31M4V+WIpSL._SX38_SY50_CR,0,0,38,50_.jpg"
+            },
+
+
+            {
+                original: "https://m.media-amazon.com/images/I/81XBYxy29CL._SL1500_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/51qlWKtLACL._SX38_SY50_CR,0,0,38,50_.jpg"
+            },
+
+            {
+                original: "https://m.media-amazon.com/images/I/71iGjdzNjQL._SL1500_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/41M-wzWI93L._SX38_SY50_CR,0,0,38,50_.jpg"
+            },
+
+        ],
+
+        aboutthisitem: [
+            { id: 1, name: "Brand", value: "Apple" },
+            { id: 2, name: "ModelName", value: "I phome 14" },
+            { id: 3, name: "SpecialFeature", value: "water and dust resistant (rated IP68 - maximum depth of 6 meters up to 30 minutes), glass back and aluminum design, Ceramic Shield front" },
+            { id: 4, name: " ConnectivityTechnology", value: "Bluetooth 5.3, Wi-Fi, NFC" },
+            { id: 5, name: "Storage", value: "128 GB" }
+        ],
         title: "Add to Cart",
+
+
 
     },
     {
@@ -125,14 +170,40 @@ export const _HOME_PRODUCT_IMAGES = [
         id: 2,
         name: "Jack & Jones ",
         image: jackandjones,
+        description: "Jack & Jones Men's Solid Boxy Fit Round Neck T-Shirt",
+        off: -30,
+        taxmessage: "Inclusive of all taxes",
+        emistartmessage: "EMI starts at ₹315 per month.",
         category: "clothing",
         category_Id: 101,
         previous_Price: "$18000",
-        purchace_count: 1200,
-        sliderImages: [iphone142, iphone143, apple14],
+        purchace_count: "1200  bought in past month",
+        sliderImages: [{
+            original: "https://m.media-amazon.com/images/I/51Bp0OmNuaL._SY741_.jpg",
+            thumbnail: "https://m.media-amazon.com/images/I/31Jb1T5Th5L._SX38_SY50_CR,0,0,38,50_.jpg",
+        },
+        {
+            original: "https://m.media-amazon.com/images/I/51dnJZbeinL._SY741_.jpg",
+            thumbnail: "https://m.media-amazon.com/images/I/31l74gjAYRL._SX38_SY50_CR,0,0,38,50_.jpg",
+        },
+        {
+            original: "https://m.media-amazon.com/images/I/51QN0XxlhPL._SY741_.jpg",
+            thumbnail: "https://m.media-amazon.com/images/I/31uyQitgHqL._SX38_SY50_CR,0,0,38,50_.jpg",
+        },
+        ],
 
+        sitelink: "Visit the Jack & Jones Store",
+        Productdetails: [],
         price: "$12800",
-        title: "Add to Cart",
+        aboutthisitem: [
+            { id: 1, name: "FabricCareDescription", value: ":: Cotton 100%, Machine wash" },
+            { id: 2, name: "PatternType", value: "::Solid" },
+            { id: 3, name: "FitType", value: "::Boxy Fit" },
+            { id: 4, name: " sleevType", value: "::shortSleeve" },
+            { id: 5, name: "NekType", value: "::RoundNeck" }
+        ],
+        serviceslogo: [SecureLogo, FreeLogo, returnLogo, CashLogo, DeliveryLogo],
+
     },
     {
 
@@ -144,7 +215,27 @@ export const _HOME_PRODUCT_IMAGES = [
         previous_Price: "$18000",
         price: "$10800",
         purchace_count: 1900,
-        sliderImages: [iphone142, iphone143, apple14],
+        sliderImages: [
+            {
+                original: "",
+                thumbnail: ""
+            },
+
+            {
+                original: "",
+                thumbnail: ""
+            },
+
+            {
+                original: "",
+                thumbnail: ""
+            },
+
+            {
+                original: "",
+                thumbnail: ""
+            },
+        ],
 
         title: "Add to Cart",
     },
@@ -159,8 +250,22 @@ export const _HOME_PRODUCT_IMAGES = [
         previous_Price: "$18000",
         price: "$1200",
         purchace_count: 400,
-        sliderImages: [iphone142, iphone143, apple14],
+        sliderImages: [
+            {
+                original: "",
+                thumbnail: ""
+            },
 
+            {
+                original: "",
+                thumbnail: ""
+            },
+
+            {
+                original: "",
+                thumbnail: ""
+            },
+        ],
         title: "Add to Cart",
     },
 
@@ -172,16 +277,67 @@ export const _HOME_PRODUCT_IMAGES = [
         image: trending1,
         category: "trending",
         category_Id: 104,
-        previous_Price: "$800",
+        previous_Price: "$800", name: 'hbd',
+
         price: "$600",
         purchace_count: 1000,
-        sliderImages: [iphone142, iphone143, apple14],
+        sliderImages: [
+            {
+                original: "",
+                thumbnail: ""
+            },
+
+            {
+                original: "",
+                thumbnail: ""
+            },
+
+            {
+                original: "",
+                thumbnail: ""
+            },
+
+            {
+                original: "",
+                thumbnail: ""
+            },
+
+            {
+                original: "",
+                thumbnail: ""
+            },
+        ],
 
         title: "Add to Cart",
+
+
     }
 
 
 ]
+
+
+
+
+
+
+
+
+
+
+
+// Accessories Images********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
 
 export const _ACCESSORIES = [{
     id: 6,
@@ -194,6 +350,8 @@ export const _ACCESSORIES = [{
     purchace_count: 1000,
 
     title: "Add to Cart",
+
+
 },
 {
 
@@ -207,6 +365,8 @@ export const _ACCESSORIES = [{
     purchace_count: 400,
 
     title: "Add to Cart",
+
+
 },
 
 

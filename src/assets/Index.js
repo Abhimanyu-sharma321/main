@@ -13,6 +13,8 @@ export { default as iphone143 } from "./ProductImages/iphone143.png";
 // clothing Images
 
 export { default as jackandjones } from "./ProductImages/clothingImages/jackandjones.png";
+export { default as jackandjones2 } from "./ProductImages/clothingImages/jackandjones2.png";
+export { default as jackandjones3 } from "./ProductImages/clothingImages/jackandjones3.png";
 
 // FOOTWEARS////////////////////////////////////////////////
 
@@ -27,3 +29,11 @@ export { default as gamingheadPhone1 } from "../assets/ProductImages/gamingacces
 export { default as trending1 } from "../assets/ProductImages/trending/trending1.png";
 
 //***************************************************** */ OTHERS**************************************
+
+// ############################################################SERVICE-LOGOS##################################################################################################################################################################################################################################
+
+export { default as returnLogo } from "../assets/Logos/returnlogo.png";
+export { default as SecureLogo } from "../assets/Logos/securetransaction.png";
+export { default as FreeLogo } from "../assets/Logos/freeimage.png";
+export { default as CashLogo } from "../assets/Logos/cashlogo.png";
+export { default as DeliveryLogo } from "../assets/Logos/amazonedeliver.png";
