@@ -156,7 +156,7 @@ export const _HOME_PRODUCT_IMAGES = [
 
         aboutthisitem: [
             { id: 1, name: "Brand", value: "Apple" },
-            { id: 2, name: "ModelName", value: "I phome 14" },
+            { id: 2, name: "ModelName", value: "I phone 14" },
             { id: 3, name: "SpecialFeature", value: "water and dust resistant (rated IP68 - maximum depth of 6 meters up to 30 minutes), glass back and aluminum design, Ceramic Shield front" },
             { id: 4, name: " ConnectivityTechnology", value: "Bluetooth 5.3, Wi-Fi, NFC" },
             { id: 5, name: "Storage", value: "128 GB" }
@@ -295,7 +295,7 @@ export const _HOME_PRODUCT_IMAGES = [
         image: trending1,
         category: "trending",
         category_Id: 104,
-        previous_Price: "$800", name: 'hbd',
+        previous_Price: "$800",
 
         price: "$600",
         purchace_count: 1000,

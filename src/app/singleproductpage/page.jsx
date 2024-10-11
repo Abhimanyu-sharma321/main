@@ -9,7 +9,7 @@ const SingleProductPage = () => {
     const { AddtoCart } = UseAddToCartHook()
     let newData = JSON.parse(localStorage.getItem("singleProducts"))
     console.log(newData, "newAtv")
-    let bottomclss = "mb-9 text-2xl font-sans-serif"
+    let h2Class = "mb-9 text-ellipsis overflow-hidden"
     return (
         <>
             <section className="flex w-full h-full mt-10 object-contain">
@@ -20,13 +20,13 @@ const SingleProductPage = () => {
                 </div>
                 <div className="w-full    ml-10">
                     <h2 className={`${newData.id === 1 ? "text-blue-950 font-bold text-3xl mt-10" : newData.id === 2 ? "text-2xl text-black" : newData.id === 3 ? "text-4xl text-red-950 font-bold" : "text-black font-bold text-4xl mb-10 "}`}>{newData.name}</h2>
-                    <h2 className={`${bottomclss}`}>{newData.description}</h2>
+                    <h2 className={`${h2Class}`}>{newData.description}</h2>
                     <h2 className="font-mono text-3xl">{newData.off_price}</h2>
-                    <h2 className={`${bottomclss}`}>{newData.taxmessage}</h2>
-                    <h2 className={`${bottomclss}`}>{newData.single_price}</h2>
-                    <h2 className={`${bottomclss}`}>{newData.emistartmessage}</h2>
-                    <h2 className={`${bottomclss}`}>{newData.purchace_count}</h2>
-                    <h2 className={`${bottomclss}`} > Price:-₹{newData.price}</h2>
+                    <h2 className={`${h2Class}`}>{newData.taxmessage}</h2>
+                    <h2 className={`${h2Class}`}>{newData.single_price}</h2>
+                    <h2 className={`${h2Class}`}>{newData.emistartmessage}</h2>
+                    <h2 className={`${h2Class}`}>{newData.purchace_count}</h2>
+                    <h2 className={`${h2Class}`} > Price:-₹{newData.price}</h2>
 
 
                     <div className="flex text-center ">
@@ -46,20 +46,16 @@ const SingleProductPage = () => {
                             ))
                         }
                     </div>
-
-
                 </div>
-
-
             </section>
 
-            <section className="ml-[700px] w-full h-full text-center flex-row   font-bold text-sky-800 ">
+            <section className="text-center " >
 
                 {
                     newData.aboutthisitem.map((i) => (
-                        <figure>
-                            <ul className="flex gap-96">
-                                <li>{i.name}</li>
+                        <figure className="ml-[500px]  text-ellipsis     p-10">
+                            <ul className="flex gap-10 text-center">
+                                <li className="ml-[500px]">{i.name}</li>
                                 <li>{i.value}</li>
                             </ul>
 

@@ -29,7 +29,7 @@ export function Home() {
         <Slides />
       </section>
       <section className="w-full   h-full">
-        <div className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center     ">
+        <div className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden ">
           {_HOME_PRODUCT_IMAGES.map((product) => (
             <>
               <div
