@@ -8,6 +8,7 @@ import { _HOME_PRODUCT_IMAGES } from "./productdetails";
 import UseAddToCartHook from "../../Hooks/useAddtocartHook";
 import UseSingleProductHook from "../../Hooks/SingleProductHok";
 import HoverComponent from "../common/Cardhover";
+import { Slides } from "@/common/Slider";
 
 export function Home() {
   const { AddtoCart, message } = UseAddToCartHook();
