@@ -5,10 +5,13 @@ import slide1 from "../assets/sliderImages/firstSlide.png";
 import slide2 from "../assets/sliderImages/secondslide.png";
 import slide3 from "../assets/sliderImages/thirdslide.png";
 import slide4 from "../assets/ProductImages/apple14.png"
-import logo from "../assets/Logos/logo2.png";
 import Image from 'next/image';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
+import Page from '@/app/home/page';
+import SingleProductPage from '@/app/singleproductpage/page';
+import ReactImageMagnify from 'react-image-magnify';
+import Magnifier from 'react-magnifier';
 export const Slides = () => {
     const spanStyle = {
         padding: '20px',
@@ -59,7 +62,7 @@ export const Slides = () => {
 }
 
 
-export const ProductSlider = ({ image, indicators }) => {
+export const ProductSlider = ({ image, indicators, imagesrc = {} }) => {
 
 
 
@@ -75,13 +78,29 @@ export const ProductSlider = ({ image, indicators }) => {
     let images = productSliders.sliderImages.map((item => item
     ))
     console.log(images, "images")
+
     return (
 
 
 
-        <div style={{ ...divStyle }} className='w-[900px]    p-20 mb-20 border-black object-cover'>
-            <ImageGallery items={images} thumbnailPosition={"left"} showFullscreenButton={false} showBullets={true} showNav={false} />
-        </div>
+        <div className='w-auto h-auto      p-20 mb-20 border-black object-cover flex bg-white'>
+            <div className='flex w-auto bg-white'>
+                <ImageGallery items={images} thumbnailPosition={"left"} showFullscreenButton={false} showBullets={true} showNav={false}
+
+
+
+                    renderItem={(item) => (
+                        <div id='imageMagnifyer' className='flex bg-white' >
+
+                            <Magnifier src={item.original} width={"full"} zoomFactor={2} mgShape={"square"} mgBorderWidth={3} mgWidth={180} mgHeight={180} />;
+
+                        </div>
+                    )}
+                />
+
+            </div>
+
+        </div >
     )
 
 

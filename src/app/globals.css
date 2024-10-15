@@ -71,7 +71,39 @@
 .slide-container .indicators li {
   transform: scale(3);
   margin: 0 15px !important;
-  & button{
+  & button {
     width: 100%;
   }
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.magnifier-content {
+  display: flex;
+}
+.magnifier-content > div {
+  width: 50%;
+}
+.magnifier-zoom {
+  position: relative;
+}
+.magnifier-zoom div {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.magnifier-zoom div:first-child {
+  opacity: 1;
+}
+
+#imageMagnifyer {
+  width: 900px;
+  height: 600px;
+}
+.isFluidWidth {
+  width: 600px;
 }

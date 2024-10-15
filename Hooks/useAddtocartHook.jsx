@@ -1,6 +1,5 @@
 "use client";
 
-import { logo } from "@/assets/Index";
 import Image from "next/image";
 import { useState } from "react";
 import Swal from "sweetalert2";
@@ -17,8 +16,8 @@ const UseAddToCartHook = () => {
       <div className="mb-[900px]">
         {Swal.fire({
           text: product.name,
-          timer: 3000,
-          quantity: 1,  
+          timer: 311000,
+          quantity: 1,
           title: "item Added To Cart",
           toast: true,
           // animation:true,

@@ -1,21 +1,14 @@
 "use client";
 import Image from "next/image";
-import bannerImage from "../assets/ProductImages/iphone.jpg";
-import shoes from "../assets/ProductImages/shoes1.jpg";
-import HoverComponent from "@/common/Cardhover";
 
-import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-import slide1 from "../assets/sliderImages/firstSlide.png";
-import slide2 from "../assets/sliderImages/secondslide.png";
-import slide3 from "../assets/sliderImages/thirdslide.png";
-import { Section } from "lucide-react";
-import { Slides } from "@/common/Slider";
 import { useState } from "react";
 import { _HOME_PRODUCT_IMAGES } from "./productdetails";
 import UseAddToCartHook from "../../Hooks/useAddtocartHook";
 import UseSingleProductHook from "../../Hooks/SingleProductHok";
+import HoverComponent from "../common/Cardhover";
+
 export function Home() {
   const { AddtoCart, message } = UseAddToCartHook();
   const { handleClick } = UseSingleProductHook();
@@ -29,17 +22,17 @@ export function Home() {
         <Slides />
       </section>
       <section className="w-full   h-full">
-        <div className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden ">
+        <div className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden bg-sky-100 ">
           {_HOME_PRODUCT_IMAGES.map((product) => (
             <>
               <div
-                className="w-full   "
+                className="w-full  bg-sky-50 "
                 key={product?.id}
                 onClick={() => handleClick(product)}
               >
                 <Image
                   src={product?.image}
-                  className="bg-white hover:scale-100 w-full h-full max-h-60 max-w-96 object-contain"
+                  className=" hover:scale-100 w-full h-[900px] max-h-60 max-w-96 object-contain "
                 />
                 <div className="mt-8">
                   <h2 className={`${_COMMONHEADING}`}>{product.name}</h2>

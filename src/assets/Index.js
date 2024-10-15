@@ -27,6 +27,7 @@ export { default as gamingheadPhone1 } from "../assets/ProductImages/gamingacces
 // ******************************TRENDING******************************************************************************************************************************88
 
 export { default as trending1 } from "../assets/ProductImages/trending/trending1.png";
+export { default as trending2 } from "../assets/ProductImages/shoes1.jpg";
 
 //***************************************************** */ OTHERS**************************************
 

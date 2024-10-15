@@ -270,19 +270,27 @@ export const _HOME_PRODUCT_IMAGES = [
 
         sliderImages: [
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/61laT6AOO6L._SL1500_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/312tnuT3rgL._SS40_.jpg"
             },
 
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/G/31/ui/loadIndicators/loading-large_labeled._CB485921387_.gif",
+                thumbnail: "https://m.media-amazon.com/images/I/41-d-7K5aiL._SS40_.jpg"
             },
 
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/61pV7P2grtL._SL1500_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/31aDMB+tg-L._SS40_.jpg"
             },
+
+        ],
+        aboutthisitem: [
+            { id: 1, name: "Style Name:", value: "Sneaker" },
+            { id: 2, name: "Model Name", value: "Smash V2 Buck" },
+            { id: 3, name: "Brand Color", value: "Black " },
+            { id: 4, name: " Material", value: "Synthetic" },
+            { id: 5, name: "Care Instructions", value: "Wipe with a clean dry cloth" }
         ],
         title: "Add to Cart",
     },
@@ -296,35 +304,42 @@ export const _HOME_PRODUCT_IMAGES = [
         category: "trending",
         category_Id: 104,
         previous_Price: "$800",
-
         price: "$600",
         purchace_count: 1000,
         sliderImages: [
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/51tSfGLJiwL._SX522_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/31uU2p41b4L._SS40_.jpg"
             },
 
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/51CVvQji0zL._SX522_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/31HZqCPBhoL._SS40_.jpg"
             },
 
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/51o1LG1BB8L._SX522_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/21oPwIfYMcL._SS40_.jpg"
             },
 
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/51PiG1cvI8L._SX522_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/31LzsfPSGjL._SS40_.jpg"
             },
 
             {
-                original: "",
-                thumbnail: ""
+                original: "https://m.media-amazon.com/images/I/51o1LG1BB8L._SX522_.jpg",
+                thumbnail: "https://m.media-amazon.com/images/I/21gJAO7yzZL._SS40_.jpg"
             },
         ],
+        aboutthisitem: [
+            { id: 1, name: "Style Name:", value: "Sneaker" },
+            { id: 2, name: "Model Name", value: "Smash V2 Buck" },
+            { id: 3, name: "Brand Color", value: "Black " },
+            { id: 4, name: " Material", value: "Synthetic" },
+            { id: 5, name: "Care Instructions", value: "Wipe with a clean dry cloth" }
+        ],
+        serviceslogo: [SecureLogo, FreeLogo, returnLogo, CashLogo, DeliveryLogo],
 
         title: "Add to Cart",
 
