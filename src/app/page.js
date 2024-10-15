@@ -54,6 +54,8 @@ export function Home() {
                 >
                   {product.title}
                 </button>
+
+                <div>{product.button}</div>
               </div>
             </>
           ))}

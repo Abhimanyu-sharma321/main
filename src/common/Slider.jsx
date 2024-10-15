@@ -80,20 +80,12 @@ export const ProductSlider = ({ image, indicators, imagesrc = {} }) => {
     console.log(images, "images")
 
     return (
-
-
-
-        <div className='w-auto h-auto      p-20 mb-20 border-black object-cover flex bg-white'>
+        <div className='w-auto h-auto       mb-20 border-black object-cover flex bg-white'>
             <div className='flex w-auto bg-white'>
                 <ImageGallery items={images} thumbnailPosition={"left"} showFullscreenButton={false} showBullets={true} showNav={false}
-
-
-
                     renderItem={(item) => (
-                        <div id='imageMagnifyer' className='flex bg-white' >
-
-                            <Magnifier src={item.original} width={"full"} zoomFactor={2} mgShape={"square"} mgBorderWidth={3} mgWidth={180} mgHeight={180} />;
-
+                        <div id='imageMagnifyer' className='flex  w-full' >
+                            <Magnifier src={item.original} width={500} zoomFactor={1} mgShape={"square"} mgBorderWidth={3} />;
                         </div>
                     )}
                 />

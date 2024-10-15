@@ -258,14 +258,16 @@ export const _HOME_PRODUCT_IMAGES = [
 
         id: 4,
         name: " Gaming HeadPhone",
+        description: "very good in gaming only few  left",
+
         image: gamingheadPhone1,
         category: "gaming",
         category_Id: 103,
         previous_Price: "$18000",
         price: "$1200",
-        purchace_count: 400,
-
-
+        off_price: "-52% ₹2,138",
+        emistartmessage: "EMI starts at ₹104. No Cost EMI available ",
+        purchace_count: "900+  bought in past month  ",
         serviceslogo: [SecureLogo, FreeLogo, returnLogo, CashLogo, DeliveryLogo],
 
         sliderImages: [
@@ -292,6 +294,8 @@ export const _HOME_PRODUCT_IMAGES = [
             { id: 4, name: " Material", value: "Synthetic" },
             { id: 5, name: "Care Instructions", value: "Wipe with a clean dry cloth" }
         ],
+        colours: ["blue", "red", "white"],
+
         title: "Add to Cart",
     },
 
@@ -339,11 +343,12 @@ export const _HOME_PRODUCT_IMAGES = [
             { id: 4, name: " Material", value: "Synthetic" },
             { id: 5, name: "Care Instructions", value: "Wipe with a clean dry cloth" }
         ],
+        colours: ["blue", "red", "white"],
         serviceslogo: [SecureLogo, FreeLogo, returnLogo, CashLogo, DeliveryLogo],
 
         title: "Add to Cart",
 
-
+        button: <button className="bg-yellow-950">add To cartssss</button>
     }
 
 
