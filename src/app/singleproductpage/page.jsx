@@ -5,14 +5,14 @@ import { ProductSlider } from "@/common/Slider"
 import UseAddToCartHook from "../../../Hooks/useAddtocartHook"
 import { useState } from "react"
 const SingleProductPage = ({ props }) => {
-    const { AddtoCart } = UseAddToCartHook()
+    const { AddtoCart, IncreaseQuantity, DecreaseQuantity, cartQuantity } = UseAddToCartHook()
     const [image, setImage] = useState("")
     let newData = JSON.parse(localStorage.getItem("singleProducts"))
     console.log(newData, "newAtv")
     let h2Class = "mb-9 text-ellipsis overflow-hidden"
     console.log(image, "imahe ")
 
-    console.log(newData.colours.map((item) => console.log(item, "colours>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")))
+    console.log(newData.colours?.map((item) => console.log(item, "colours>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")))
 
     // const settingImage = (e) => {
     //     console.log(e, "prodycnjnwjkd")
@@ -54,10 +54,10 @@ const SingleProductPage = ({ props }) => {
 
                     <div className="flex text-center ">
 
-                        <button className="border border-black w-20 bg-sky-600 mr-2 hover:bg-sky-800">-</button>
-                        <input type="text" value={1} className="border border-black text-center h-10" />
+                        <button className="border border-black w-20 bg-sky-600 mr-2 hover:bg-sky-800" onClick={DecreaseQuantity} >-</button>
+                        <input type="text" value={cartQuantity} className="border border-black text-center h-10" />
 
-                        <button className="border border-black w-20 bg-sky-600 ml-2 hover:bg-sky-800">+</button>
+                        <button className="border border-black w-20 bg-sky-600 ml-2 hover:bg-sky-800" onClick={IncreaseQuantity}>+</button>
                     </div>
                     <button className="w-52 h-16 bg-sky-800 hover:bg-white text-white hover:text-black font-bold mt-16 ml-28 rounded-xl  hover:border border-black" onClick={() => AddtoCart(newData)}>Add To Cart</button>
 
@@ -65,7 +65,7 @@ const SingleProductPage = ({ props }) => {
 
                     <div className="flex gap-7 w-full mt-16 cursor-pointer">
                         {
-                            newData.colours.map((color) => (
+                            newData.colours?.map((color) => (
                                 <div style={{ backgroundColor: color, borderRadius: 90, textAlign: "center", borderColor: "black", width: "100px", height: "90px" }}>
                                 </div>
                             ))

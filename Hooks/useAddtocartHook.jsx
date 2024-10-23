@@ -5,31 +5,42 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 
 const UseAddToCartHook = () => {
-  const [cartData, setCartData] = useState();
-  const [cartQuantity, setCartQuantity] = useState();
-  const [message, setMessage] = useState(null);
+
+  const [cartQuantity, setCartQuantity] = useState(1)
+
+  const IncreaseQuantity = () => {
+
+    setCartQuantity((prev) => prev < 9 ? prev + 1 : prev)
+
+  }
+  const DecreaseQuantity = () => {
+    setCartQuantity((prev) => prev <= 0 ? prev - 1 : prev)
+
+  }
+
+
+
+
   const AddtoCart = (product) => {
-    localStorage.setItem("productData", JSON.stringify(product));
-    // console.log(cartData,"cartData hokkkk",cartQuantity?.length,"length>>>>>>>>>")
 
-    return (
-      <div className="mb-[900px]">
-        {Swal.fire({
-          text: product.name,
-          timer: 311000,
-          quantity: 1,
-          title: "item Added To Cart",
-          toast: true,
-          // animation:true,
-          customClass: "ml-[900px] mb-[1000px] w-96 h-32",
-          denyButtonText: "See  Cart"
-          // html:<Image src={product?.image} alt="productImage"/>
+    const getCartData = JSON.parse(localStorage.getItem("productData")) || [];
 
-        })}
-      </div>
-    );
+    if (getCartData.find(({ id }) => product.id == id)) {
+      console.log("sanem>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
-  };
-  return { AddtoCart, cartData, setCartData, setCartQuantity, message };
+
+    }
+    else {
+      getCartData.push(product);
+
+      localStorage.setItem("productData", JSON.stringify(getCartData));
+
+    }
+
+
+
+  }
+
+  return { AddtoCart, IncreaseQuantity, DecreaseQuantity, cartQuantity };
 };
 export default UseAddToCartHook;
