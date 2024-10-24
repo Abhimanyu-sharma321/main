@@ -14,51 +14,60 @@ export function Home() {
   const { AddtoCart, message } = UseAddToCartHook();
   const { handleClick } = UseSingleProductHook();
   const [active, setActive] = useState(null);
+
   const _COMMONHEADING = "text-2xl h-auto w-auto font-semibold";
   const PARAGRAPH_CLASS = " font-sans";
-
+  const [mouseEnter, setMouseEnter] = useState(false);
   return (
     <>
       <section>
         <Slides />
       </section>
       <section className="w-full   h-full">
-        <div className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden bg-sky-100 ">
-          {_HOME_PRODUCT_IMAGES.map((product) => (
-            <>
-              <div
-                className="w-full  bg-sky-50 "
-                key={product?.id}
-                onClick={() => handleClick(product)}
-              >
-                <Image
-                  src={product?.image}
-                  className=" hover:scale-100 w-full h-[900px] max-h-60 max-w-96 object-contain "
-                />
-                <div className="mt-8">
-                  <h2 className={`${_COMMONHEADING}`}>{product.name}</h2>
-                  <p className={`${PARAGRAPH_CLASS}`}>
-                    {product.purchace_count}K+ bought in last month
-                  </p>
+        <div
+          className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden bg-sky-100 "
+          onMouseOver={() => setMouseEnter(true)}
+          onMouseLeave={() => setMouseEnter(false)}
+        >
+          {mouseEnter
+            ? _HOME_PRODUCT_IMAGES.map((product) => (
+                <>
+                  <div
+                    className="w-full  bg-sky-50 "
+                    key={product?.id}
+                    // onClick={() => handleClick(product)}
+                  >
+                    <Image
+                      src={product?.image}
+                      className=" hover:scale-100 w-full h-[900px] max-h-60 max-w-96 object-contain "
+                    />
+                    <div className="mt-8">
+                      <h2 className={`${_COMMONHEADING}`}>
+                        {mouseEnter ? product.name : null}
+                      </h2>
+                      <p className={`${PARAGRAPH_CLASS}`}>
+                        {product.purchace_count}K+ bought in last month
+                      </p>
 
-                  <p className={`${PARAGRAPH_CLASS} mt-10`}>
-                    <i>Previous_Price</i> {product.previous_Price}
-                  </p>
-                  <p className={`${PARAGRAPH_CLASS} mt-10`}>
-                    Today_Price:-{product.price}
-                  </p>
-                </div>
-                <button
-                  className="grayscale-0  mt-5 w-52 h-16 bg-sky-800 text-white font-bold hover:bg-white hover:text-black hover:border border-black rounded-sm"
-                  onClick={() => AddtoCart(product)}
-                >
-                  {product.title}
-                </button>
+                      <p className={`${PARAGRAPH_CLASS} mt-10`}>
+                        <i>Previous_Price</i> {product.previous_Price}
+                      </p>
+                      <p className={`${PARAGRAPH_CLASS} mt-10`}>
+                        Today_Price:-{product.price}
+                      </p>
+                    </div>
+                    <button
+                      className="grayscale-0  mt-5 w-52 h-16 bg-sky-800 text-white font-bold hover:bg-white hover:text-black hover:border border-black rounded-sm"
+                      onClick={() => AddtoCart(product)}
+                    >
+                      {product.title}
+                    </button>
 
-                <div>{product.button}</div>
-              </div>
-            </>
-          ))}
+                    <div>{product.button}</div>
+                  </div>
+                </>
+              ))
+            : null}
         </div>
       </section>
 

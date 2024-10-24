@@ -10,12 +10,13 @@ import Page from "@/app/home/page";
 import Floatingnav from "../Floatingnav";
 export const Header = () => {
   const same_Class = "mt-10 font-sans text-2xl  hover:border-sky-900";
-const [cartLength,setLength]=useState([0])
-  useEffect(() => {
-    let cartlength=JSON.parse(localStorage.getItem("productData"))
-    setLength(cartLength)
-    console.log(cartLength.length ,"length")
-  });
+  const [cartLength, setLength] = useState([])
+  // useEffect(() => {
+  let cartlength = JSON.parse(localStorage.getItem("productData"))
+  console.log(cartlength, "cartlength>>>>>>>>>>>>>>>>>")
+  //   setLength(cartLength)
+  //   console.log(cartLength.length, "length")
+  // });
   return (
     <>
       {/* <div className={`${location.pathname === "/" ? "bg-black text-white" : "bg-black"}`}>
