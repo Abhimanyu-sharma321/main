@@ -32,15 +32,16 @@ export function Home() {
       <section className="w-full   h-full">
         <div
           className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden bg-sky-100 "
-          onMouseOver={() => setMouseEnter(true)}
-          onMouseLeave={() => setMouseEnter(false)}
+
+
         >
           {_HOME_PRODUCT_IMAGES.map((product) => (
             <>
               <div
+
                 className="w-full h-auto  bg-sky-50 "
                 key={product?.id}
-              // onClick={() => handleClick(product)}
+                onClick={() => handleClick(product)}
               >
                 <Image
                   src={product?.image}
