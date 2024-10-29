@@ -1,101 +1,105 @@
+"use client";
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+import "react-slideshow-image/dist/styles.css";
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+import { useState } from "react";
+import { _HOME_PRODUCT_IMAGES } from "./productdetails";
+import UseAddToCartHook from "../../Hooks/useAddtocartHook";
+import UseSingleProductHook from "../../Hooks/SingleProductHok";
+import HoverComponent from "../common/Cardhover";
+import { Slides } from "@/common/Slider";
+import Link from "next/link";
+// import IDmeButton from "@/components/idme/Idme";
+
+export function Home() {
+  const { AddtoCart, message } = UseAddToCartHook();
+  const { handleClick } = UseSingleProductHook();
+  const [active, setActive] = useState(null);
+
+  const _COMMONHEADING = "text-2xl h-auto w-auto font-semibold";
+  const PARAGRAPH_CLASS = " font-sans";
+  const [mouseEnter, setMouseEnter] = useState(false);
+
+
+  const _IDME_LINK = "https://groups.id.me/?&scopes=military,responder&client_id=8d2bd46045ef66793c589f9fc7d0a0b1&redirect_uri=https://perfectlyposh.vercel.app/idme/callback&response_type=code&type=button&source=idme_widget_old&current_url=http://localhost:3000/checking"
+
+  return (
+    <>
+      <section>
+        <Slides />
+      </section>
+      <section className="w-full   h-full">
+        <div
+          className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden bg-sky-100 "
+          onMouseOver={() => setMouseEnter(true)}
+          onMouseLeave={() => setMouseEnter(false)}
+        >
+          {_HOME_PRODUCT_IMAGES.map((product) => (
+            <>
+              <div
+                className="w-full h-auto  bg-sky-50 "
+                key={product?.id}
+              // onClick={() => handleClick(product)}
+              >
+                <Image
+                  src={product?.image}
+                  className=" hover:scale-100 w-full h-[900px] max-h-60 max-w-96 object-contain "
+                />
+                <div className="mt-8">
+                  <h2 className={`${_COMMONHEADING}`}>
+                    {mouseEnter ? product.name : null}
+                  </h2>
+                  <p className={`${PARAGRAPH_CLASS}`}>
+                    {product.purchace_count}K+ bought in last month
+                  </p>
+
+                  <p className={`${PARAGRAPH_CLASS} mt-10`}>
+                    <i>Previous_Price</i> {product.previous_Price}
+                  </p>
+                  <p className={`${PARAGRAPH_CLASS} mt-10`}>
+                    Today_Price:-{product.price}
+                  </p>
+                </div>
+                <button
+                  className="grayscale-0  mt-5 w-52 h-16 bg-sky-800 text-white font-bold hover:bg-white hover:text-black hover:border border-black rounded-sm"
+                  onClick={() => AddtoCart(product)}
+                >
+                  {product.title}
+                </button>
+
+
+                <div className="w-full h-full ">
+
+                  <a href={
+
+                    _IDME_LINK
+                  } className="w-full h-full border border-black bg-sky-300 font-bold text-white rounded-s-md ">
+
+                    <button className="w-[300px] h-96">Click  here to verify </button>
+                  </a>
+                </div>
+
+
+                <h6 className="mt-10">
+                  Extra 20% Off  For Army Officer
+                </h6>
+
+
+
+              </div >
+            </>
+          ))
+          }
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section >
+
+      <section className="bg-black ">
+        <HoverComponent />
+      </section>
+
+      <section>{message === true ? <div>helllo</div> : null}</section>
+    </>
   );
 }
+export default Home;

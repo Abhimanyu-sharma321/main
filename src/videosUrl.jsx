@@ -1,0 +1,1 @@
+export const apple_Video = "/105/media/us/iphone/family/2024/cf19f185-dd7e-4350-97ff-e44860713b54/anim/welcome/xlarge.mp4";
