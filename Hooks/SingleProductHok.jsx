@@ -6,7 +6,6 @@ const UseSingleProductHook = () => {
 
     const [singleProductData, setSingleDAta] = useState([])
     const router = useRouter();
-    
     const handleClick = (product) => {
         localStorage.setItem("singleProducts", JSON.stringify(product))
         router.push("/singleproductpage")

@@ -42,5 +42,6 @@ const UseAddToCartHook = () => {
   }
 
   return { AddtoCart, IncreaseQuantity, DecreaseQuantity, cartQuantity };
+ 
 };
 export default UseAddToCartHook;
