@@ -23,7 +23,7 @@ const Acceessories = () => {
                 {
                   mouseOver ? (
 
-                    <button className="  mt-10 h-16 bg-sky-700 mr-10 text-white hover:text-black round-[20px] hover:bg-white hover:border border-black w-44"  >{products.title}</button>
+                     <button className="  mt-10 h-16 bg-sky-700 mr-10 text-white hover:text-black round-[20px] hover:bg-white hover:border border-black w-44"  >{products.title}</button>
 
                   ) : (
                     null

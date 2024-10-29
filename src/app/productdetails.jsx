@@ -379,7 +379,7 @@ export const _HOME_PRODUCT_IMAGES = [
 export const _ACCESSORIES = [{
     id: 6,
     name: "JBL Earphone",
-    image: trending1,
+    image: "https://m.media-amazon.com/images/I/51tSfGLJiwL._SX522_.jpg",
     category: "trending",
     category_Id: 104,
     previous_Price: "$800",
@@ -387,14 +387,12 @@ export const _ACCESSORIES = [{
     purchace_count: 1000,
 
     title: "Add to Cart",
-
-
 },
 {
 
     id: 7,
     name: " Gaming HeadPhone",
-    image: gamingheadPhone1,
+    image: "https://m.media-amazon.com/images/I/61laT6AOO6L._SL1500_.jpg",
     category: "gaming",
     category_Id: 103,
     previous_Price: "$18000",
