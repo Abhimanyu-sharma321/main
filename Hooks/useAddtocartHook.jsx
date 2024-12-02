@@ -26,14 +26,12 @@ const UseAddToCartHook = () => {
     const getCartData = JSON.parse(localStorage.getItem("productData")) || [];
 
     if (getCartData.find(({ id }) => product.id == id)) {
-      console.log("sanem>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-
-
+      console.log(getCartData.cartQuantity + 1, "sanem>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
     else {
       getCartData.push(product);
 
-      localStorage.setItem("productData", JSON.stringify(getCartData));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    localStorage.setItem("productData", JSON.stringify(getCartData));
 
     }
 

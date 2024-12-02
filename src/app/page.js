@@ -30,11 +30,7 @@ export function Home() {
         <Slides />
       </section>
       <section className="w-full   h-full">
-        <div
-          className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden bg-sky-100 "
-
-
-        >
+        <div className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden bg-sky-100 ">
           {_HOME_PRODUCT_IMAGES.map((product) => (
             <>
               <div
@@ -69,25 +65,6 @@ export function Home() {
                   {product.title}
                 </button>
 
-
-                <div className="w-full h-full ">
-
-                  <a href={
-
-                    _IDME_LINK
-                  } className="w-full h-full border border-black bg-sky-300 font-bold text-white rounded-s-md ">
-
-                    <button className="w-[300px] h-96">Click  here to verify </button>
-                  </a>
-                </div>
-
-
-                <h6 className="mt-10">
-                  Extra 20% Off  For Army Officer
-                </h6>
-
-
-
               </div >
             </>
           ))
@@ -99,7 +76,6 @@ export function Home() {
         <HoverComponent />
       </section>
 
-      <section>{message === true ? <div>helllo</div> : null}</section>
     </>
   );
 }

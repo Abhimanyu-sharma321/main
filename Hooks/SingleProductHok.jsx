@@ -11,7 +11,6 @@ const UseSingleProductHook = () => {
         localStorage.setItem("singleProducts", JSON.stringify(product))
         router.push("/singleproductpage")
 
-
     }
 
 
