@@ -8,12 +8,17 @@ import Link from "next/link";
 import UseAddToCartHook from "../../../Hooks/useAddtocartHook";
 import Page from "@/app/home/page";
 import Floatingnav from "../Floatingnav";
+import _ from "lodash";
 export const Header = () => {
   const same_Class = "mt-10 font-sans text-2xl  hover:border-sky-900";
   const [cartLength, setLength] = useState([])
+  let getCartData = JSON.parse(localStorage.getItem("productData"))
+
+  let product_Quantity = _.size(getCartData)
+
   // useEffect(() => {
   let cartlength = JSON.parse(localStorage.getItem("productData"))
-  console.log(cartlength, "cartlength>>>>>>>>>>>>>>>>>")
+  console.log(getCartData, "cartlength>>>>>>>>>>>>>>>>>")
   //   setLength(cartLength)
   //   console.log(cartLength.length, "length")
   // });
@@ -33,7 +38,7 @@ export const Header = () => {
               <Link href={"/allproductpage"}>Shop</Link>
             </div>
             <Link href={"/cart"}>
-              <div className={`${same_Class}`}>cart({cartLength?.length})</div>
+              <div className={`${same_Class}`}>cart({product_Quantity})</div>
             </Link>
 
             <div className={`${same_Class}`}>SignUp</div>

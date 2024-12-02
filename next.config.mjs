@@ -6,7 +6,10 @@ const nextConfig = {
       "www.apple.com",
       "m.media-amazon.com",
       "localhost",
+      "i.vimeocdn.com",
+      "cdn.pixabay.com"
     ],
+
   },
 };
 

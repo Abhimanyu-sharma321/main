@@ -38,3 +38,16 @@ export { default as SecureLogo } from "../assets/Logos/securetransaction.png";
 export { default as FreeLogo } from "../assets/Logos/freeimage.png";
 export { default as CashLogo } from "../assets/Logos/cashlogo.png";
 export { default as DeliveryLogo } from "../assets/Logos/amazonedeliver.png";
+
+
+
+
+
+
+// landing Images 
+
+
+
+
+export { default as warehouseImage } from "../assets/landingImages/image.png"
+export { default as warehouseImage2 } from "../assets/landingImages/warehouse2.webp"

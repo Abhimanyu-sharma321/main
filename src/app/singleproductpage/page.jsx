@@ -63,14 +63,14 @@ const SingleProductPage = ({ props }) => {
 
 
 
-                    <div className="flex gap-7 w-full mt-16 cursor-pointer">
+                    {/* <div className="flex gap-7 w-full mt-16 cursor-pointer">
                         {
                             newData.colours?.map((color) => (
                                 <div style={{ backgroundColor: color, borderRadius: 90, textAlign: "center", borderColor: "black", width: "100px", height: "90px" }}>
                                 </div>
                             ))
                         }
-                    </div>
+                    </div> */}
                     <div className="flex gap-10 mt-10">
 
                         {

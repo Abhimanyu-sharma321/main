@@ -28,7 +28,6 @@ const Acceessories = () => {
                   ) : (
                     null
 
-
                   )
                 }
               </div>
