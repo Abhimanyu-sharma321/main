@@ -20,7 +20,7 @@ const Landing = () => {
                     <p className="text-3xl font-sans">Live Amplified.</p>
                 </div>
 
-                <div className="flex mt-40  w-1/2 ">
+                <div className="flex mt-40  w-1/2 hover:transform: rotateY(.5turn); ">
 
                     <div className="flex">
                         <div className="hover:border border-sky-600   h-[60px] w-[20] items-center  justify-center rounded-full" style={{
@@ -55,7 +55,7 @@ const Landing = () => {
                 </div>
             </section >
 
-            <section className="w-full h-full flex bg-black text-white  p-40">
+            <section className="w-full h-full flex bg-transparent text-sky-500  p-40">
 
                 <div className="w-1/2 h-auto">
 
@@ -89,9 +89,9 @@ const Landing = () => {
 
 
 
-            <section className="w-full h-full flex bg-black text-white  p-40">
+            <section className="w-full h-full flex  text-white  p-40 border ">
 
-                <div className="w-1/2 h-auto">
+                <div className="w-1/2 h-auto border border-black  ">
 
                     <h2>WE GROW</h2>
 
@@ -107,8 +107,9 @@ const Landing = () => {
                         and reach your goals faster. This is how we grow—together, as
                         one-big-team.</p>
 
-                    <div className=" bg-[#6DFF40] h-14 mt-10 w-[300px] ml-[300px] align-middle rounded-2xl text-center">
-                        <a href="" className="   text-black  align-middle mt-1"> See How We Thrive</a>
+                    <div className=" bg-[#4444] h-14 mt-10 w-[300px] ml-[300px]   text-center">
+                        About
+                        {/* <a href="" className="   text-black  align-middle mt-1">  </a> */}
                     </div>
                 </div>
 
@@ -149,7 +150,7 @@ const Landing = () => {
 
 
                     <div className=" bg-[#6DFF40] h-14 mt-10 w-[300px] ml-[300px] align-middle rounded-2xl text-center">
-                        <a href="" className="   text-black  align-middle mt-1"> See How We Thrive</a>
+                        <a href="" className="   text-black  align-middle mt-1">  </a>
                     </div>
                 </div>
 
@@ -158,7 +159,7 @@ const Landing = () => {
 
 
 
-            <section className="w-full h-full flex bg-black text-white  p-40">
+            <section className="w-full h-full flex bg-white text-sky-500  p-40">
 
                 <div className="content-wrapper">
                     <div className="bg-img"></div>
