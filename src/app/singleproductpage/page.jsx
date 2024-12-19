@@ -27,22 +27,14 @@ const SingleProductPage = ({ props }) => {
         <>
 
 
-            < section className="flex w-full h-full mt-10 object-contain bg-blue-50 " >
-
-
+            < section className="flex w-full h-full mt-10 object-contain  " >
                 <div className="w-full h-full " >
-
                     <div className={`{w-full bg-blue-50 h-1/2 `} onClick={(e) => (e)}  >
                         <ProductSlider className={`{w-96 h-auto  backdrop-grayscale-0`} />
-
-
                     </div>
-
-
-
                 </div>
 
-                <div className="w-full    ml-10 bg-blue-50">
+                <div className="w-full    ml-12 shadow">
                     <h2 className={`${newData.id === 1 ? "text-blue-950 font-bold text-3xl mt-10" : newData.id === 2 ? "text-2xl text-black" : newData.id === 3 ? "text-4xl text-red-950 font-bold" : "text-black font-bold text-4xl mb-10 "}`}>{newData.name}</h2>
                     <h2 className={`${h2Class}`}>{newData.description}</h2>
                     <h2 className="font-mono text-3xl">{newData.off_price}</h2>
@@ -51,9 +43,7 @@ const SingleProductPage = ({ props }) => {
                     <h2 className={`${h2Class}`}>{newData.emistartmessage}</h2>
                     <h2 className={`${h2Class}`}>{newData.purchace_count}</h2>
                     <h2 className={`${h2Class}`} > Price:-₹{newData.price}</h2>
-
                     <div className="flex text-center ">
-
                         <button className="border border-black w-20 bg-sky-600 mr-2 hover:bg-sky-800" onClick={DecreaseQuantity} >-</button>
                         <input type="text" value={cartQuantity} className="border border-black text-center h-10" />
 
@@ -71,7 +61,7 @@ const SingleProductPage = ({ props }) => {
                             ))
                         }
                     </div> */}
-                    <div className="flex gap-10 mt-10">
+                    {/* <div className="flex gap-10 mt-10">
 
                         {
                             newData.serviceslogo.map((logos) => (
@@ -81,7 +71,7 @@ const SingleProductPage = ({ props }) => {
                             ))
 
                         }
-                    </div>
+                    </div> */}
 
 
 
