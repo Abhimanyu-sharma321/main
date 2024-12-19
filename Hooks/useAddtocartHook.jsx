@@ -6,7 +6,8 @@ import Swal from "sweetalert2";
 
 const UseAddToCartHook = () => {
 
-  const [cartQuantity, setCartQuantity] = useState(1)
+  const [cartQuantity, setCartQuantity] = useState(0)
+  const [open, setOpen] = useState(false)
 
   const IncreaseQuantity = () => {
 
@@ -18,27 +19,22 @@ const UseAddToCartHook = () => {
 
   }
 
-
-
-
   const AddtoCart = (product) => {
-
-    const getCartData = JSON.parse(localStorage.getItem("productData")) || [];
+        const getCartData = JSON.parse(localStorage.getItem("productData")) || [];
 
     if (getCartData.find(({ id }) => product.id == id)) {
       console.log(getCartData.cartQuantity + 1, "sanem>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
     else {
       getCartData.push(product);
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    localStorage.setItem("productData", JSON.stringify(getCartData));
-
+      localStorage.setItem("productData", JSON.stringify(getCartData));
+      setOpen(true)
     }
-
-
-
   }
 
-  return { AddtoCart, IncreaseQuantity, DecreaseQuantity, cartQuantity };
+
+
+
+  return { AddtoCart, IncreaseQuantity, DecreaseQuantity, cartQuantity, setOpen, open, };
 };
 export default UseAddToCartHook;

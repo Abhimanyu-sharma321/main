@@ -10,6 +10,7 @@ import UseSingleProductHook from "../../Hooks/SingleProductHok";
 import HoverComponent from "../common/Cardhover";
 import { Slides } from "@/common/Slider";
 import Link from "next/link";
+import SideCart from "@/components/sidecart/SideCart";
 // import IDmeButton from "@/components/idme/Idme";
 
 export function Home() {
@@ -30,36 +31,31 @@ export function Home() {
         <Slides />
       </section>
       <section className="w-full   h-full">
-        <div className="w-full  grid grid-cols-3 p-32  gap-32 border border-black text-center    text-ellipsis overflow-hidden bg-sky-100 ">
+        <div className="w-full  grid grid-cols-3 p-32  gap-32 border  text-center    text-ellipsis overflow-hidden  ">
           {_HOME_PRODUCT_IMAGES.map((product) => (
             <>
               <div
 
-                className="w-full h-auto  bg-sky-50 "
+                className="w-full h-auto  bg-white "
                 key={product?.id}
                 onClick={() => handleClick(product)}
               >
                 <Image
                   src={product?.image}
-                  className=" hover:scale-100 w-full h-[900px] max-h-60 max-w-96 object-contain "
+                  className=" hover:scale-100 w-full h-full max-h-60 max-w-96 object-contain "
                 />
                 <div className="mt-8">
                   <h2 className={`${_COMMONHEADING}`}>
                     {mouseEnter ? product.name : null}
                   </h2>
-                  <p className={`${PARAGRAPH_CLASS}`}>
-                    {product.purchace_count}K+ bought in last month
-                  </p>
 
-                  <p className={`${PARAGRAPH_CLASS} mt-10`}>
-                    <i>Previous_Price</i> {product.previous_Price}
-                  </p>
+
                   <p className={`${PARAGRAPH_CLASS} mt-10`}>
                     Today_Price:-{product.price}
                   </p>
                 </div>
                 <button
-                  className="grayscale-0  mt-5 w-52 h-16 bg-sky-800 text-white font-bold hover:bg-white hover:text-black hover:border border-black rounded-sm"
+                  className="grayscale-0  mt-5 w-52 h-16 bg-white border border-black text-black font-bold hover:bg-black hover:text-white hover:border border-black rounded-sm"
                   onClick={() => AddtoCart(product)}
                 >
                   {product.title}
@@ -75,6 +71,7 @@ export function Home() {
       <section className="bg-black ">
         <HoverComponent />
       </section>
+      <SideCart />
 
     </>
   );

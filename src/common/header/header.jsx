@@ -27,9 +27,9 @@ export const Header = () => {
       {/* <div className={`${location.pathname === "/" ? "bg-black text-white" : "bg-black"}`}>
                 <Floatingnav />
             </div> */}
-      <div className="bg-black text-white  rounded-sm shadow shadow-slate-800 ">
+      <div className="bg-[#040200] text-white  rounded-sm shadow shadow-slate-800 ">
         <header className="ml-16 ">
-          <nav className="flex gap-72 ">
+          <nav className="flex gap-72  w-[900px]">
             <Link href={"/"}>
               <Image src={logo} alt="logosss" width={200} height={400} />
             </Link>
@@ -38,12 +38,14 @@ export const Header = () => {
               <Link href={"/allproductpage"}>Shop</Link>
             </div>
             <Link href={"/cart"}>
-              <div className={`${same_Class}`}>cart({product_Quantity})</div>
+              <div className={`${same_Class}`}
+
+              >
+                <cartLogo />
+                {product_Quantity}</div>
             </Link>
 
-            <div className={`${same_Class}`}>SignUp</div>
 
-            <div className={`${same_Class}`}>login</div>
           </nav>
         </header>
       </div>

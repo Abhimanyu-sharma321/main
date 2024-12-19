@@ -30,6 +30,7 @@ export const Slides = () => {
 
         {
             id: 1,
+
             image: slide1,
             caption: 'Slide 1'
         },
@@ -49,7 +50,7 @@ export const Slides = () => {
     return (
         <>
             <div className="slide-container    ">
-                <Slide autoplay={true} canSwipe={true} responsive={true} indicators={true}  >
+                <Slide autoplay={true} canSwipe={true} responsive={true} indicators={false}  >
                     {slideImages.map((slideImage, index) => (
                         <div style={{ ...divStyle }}  >
                             <Image src={slideImage.image} />
@@ -63,9 +64,6 @@ export const Slides = () => {
 
 
 export const ProductSlider = ({ image, indicators, imagesrc = {} }) => {
-
-
-
     var divStyle = {
         display: 'flex',
         alignItems: 'center',
