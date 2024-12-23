@@ -34,6 +34,7 @@
     "react-medium-image-zoom": "^5.2.10",
     "react-slick": "^0.30.2",
     "react-slideshow-image": "^4.3.2",
+    "rsuite": "^5.76.0",
     "sweetalert2": "^11.14.2",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",

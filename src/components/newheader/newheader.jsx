@@ -5,7 +5,12 @@ export const NewHeader = () => {
 
 
     const projects = [
-
+        // {
+        //     title: "Home",
+        //     // description:
+        //     // "World-class audio solutions for creators, fans and installers. Enjoy distortion-free sound that powers professional spaces, from recording studios to concert venues and sports stadiums.",
+        //     link: "/",
+        // },
         {
             title: "Shop",
             // description:
@@ -30,7 +35,7 @@ export const NewHeader = () => {
     return (
         <div className=" bg-black">
 
-            <div className="max-w-5xl mx-auto px-8" >
+            <div className="max-w-[1000px] mx-auto px-8" >
                 <HoverEffect items={projects} />
             </div>
         </div>
