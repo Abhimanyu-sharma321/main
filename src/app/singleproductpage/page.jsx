@@ -27,51 +27,32 @@ const SingleProductPage = ({ props }) => {
         <>
 
 
-            < section className="flex w-full h-full mt-10 object-contain  " >
-                <div className="w-full h-full " >
-                    <div className={`{w-full bg-blue-50 h-1/2 `} onClick={(e) => (e)}  >
-                        <ProductSlider className={`{w-96 h-auto  backdrop-grayscale-0`} />
-                    </div>
+            < section className="container flex w-full h-full mt-10 object-contain  " >
+                <div className={`  {w-full  h-1/2 `} onClick={(e) => (e)}  >
+                    <ProductSlider className={`{w-96 h-auto  backdrop-grayscale-0`} />
                 </div>
 
-                <div className="w-full    ml-12 shadow">
-                    <h2 className={`${newData.id === 1 ? "text-blue-950 font-bold text-3xl mt-10" : newData.id === 2 ? "text-2xl text-black" : newData.id === 3 ? "text-4xl text-red-950 font-bold" : "text-black font-bold text-4xl mb-10 "}`}>{newData.name}</h2>
+                <div >
+                    <h2 className="text-slate-800 dark:text-gray-800font-bold text-4xl mb-10 ">{newData.name}</h2>
                     <h2 className={`${h2Class}`}>{newData.description}</h2>
                     <h2 className="font-mono text-3xl">{newData.off_price}</h2>
-                    <h2 className={`${h2Class}`}>{newData.taxmessage}</h2>
-                    <h2 className={`${h2Class}`}>{newData.single_price}</h2>
-                    <h2 className={`${h2Class}`}>{newData.emistartmessage}</h2>
-                    <h2 className={`${h2Class}`}>{newData.purchace_count}</h2>
                     <h2 className={`${h2Class}`} > Price:-₹{newData.price}</h2>
+                    <h2 className={`${h2Class}`} > {newData.color}</h2>
+
+
                     <div className="flex text-center ">
-                        <button className="border border-black w-20 bg-sky-600 mr-2 hover:bg-sky-800" onClick={DecreaseQuantity} >-</button>
+                        <button className="border border-black w-20  " onClick={DecreaseQuantity} >-</button>
                         <input type="text" value={cartQuantity} className="border border-black text-center h-10" />
 
-                        <button className="border border-black w-20 bg-sky-600 ml-2 hover:bg-sky-800" onClick={IncreaseQuantity}>+</button>
+                        <button className="border border-black w-20   " onClick={IncreaseQuantity}>+</button>
                     </div>
-                    <button className="w-52 h-16 bg-sky-800 hover:bg-white text-white hover:text-black font-bold mt-16 ml-28 rounded-xl  hover:border border-black" onClick={() => AddtoCart(newData)}>Add To Cart</button>
+
+
+                    <button className="w-52 h-16 bg-[#8cc0e9]  font-bold mt-16 ml-28  text-white rounded-md" onClick={() => AddtoCart(newData)}>Add To Cart</button>
 
 
 
-                    {/* <div className="flex gap-7 w-full mt-16 cursor-pointer">
-                        {
-                            newData.colours?.map((color) => (
-                                <div style={{ backgroundColor: color, borderRadius: 90, textAlign: "center", borderColor: "black", width: "100px", height: "90px" }}>
-                                </div>
-                            ))
-                        }
-                    </div> */}
-                    {/* <div className="flex gap-10 mt-10">
 
-                        {
-                            newData.serviceslogo.map((logos) => (
-                                <div className="flex ">
-                                    <Image src={logos} alt="service logo" />
-                                </div>
-                            ))
-
-                        }
-                    </div> */}
 
 
 

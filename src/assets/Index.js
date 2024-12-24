@@ -1,14 +1,17 @@
 // Logos
 export { default as logo } from "./Logos/logo4.png";
+
 // # ***************************************ALLProduct Images**************************************************************************************************************#
 
 export { default as apple14 } from "./ProductImages/apple14.png";
+export { default as footerLogo } from "./Logos/footerLogo.png";
 export { default as apple15 } from "./ProductImages/iphone15.png";
 export { default as apple16 } from "./ProductImages/iphone16.png";
 export { default as apple16Pro } from "./ProductImages/iphone16pro.png";
 export { default as iphoneSe } from "./ProductImages/iphonese.png";
 export { default as iphone142 } from "./ProductImages/iphone14(2).png";
 export { default as iphone143 } from "./ProductImages/iphone143.png";
+export { default as LandingImage2 } from "./ProductImages/iphone.jpg"
 // export { default as iphone144 } from "./ProductImages/iphone144.png";
 // clothing Images
 
@@ -44,10 +47,33 @@ export { default as DeliveryLogo } from "../assets/Logos/amazonedeliver.png";
 
 
 
-// landing Images 
+//  Abouts Images 
 
 
 
-
+export { default as landingImage } from "../assets/landingImages/poshbanner.jpg"
 export { default as warehouseImage } from "../assets/landingImages/image.png"
 export { default as warehouseImage2 } from "../assets/landingImages/warehouse2.webp"
+export { default as banner } from "./landingImages/ banner1.png"
+export { default as banner2 } from "./landingImages/banner2.png"
+
+
+// landing productsImages
+
+
+export { default as trackPant1 } from "./ProductImages/landingPage/image1.png"
+export { default as trackPant2 } from "./ProductImages/landingPage/imag2.png"
+export { default as trackPant3 } from "./ProductImages/landingPage/imag3.png"
+export { default as trackPant4 } from "./ProductImages/landingPage/image4.png"
+export { default as image } from "./ProductImages/landingPage/image5.png"
+
+
+// landing logos 
+
+export { default as logo1 } from "./Logos/landing/ logo1.png"
+export { default as logo2 } from "./Logos/landing/logo2.png"
+export { default as logo3 } from "./Logos/landing/logo3.png"
+export { default as logo4 } from "./Logos/landing/logo4.png"
+export { default as logo5 } from "./Logos/landing/logo5.png"
+
+

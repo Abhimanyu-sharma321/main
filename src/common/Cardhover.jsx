@@ -41,12 +41,12 @@ const HoverComponent = () => {
             // description:
             //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
             link: "/allproductpage",
-        
+
         },
     ];
     return (
-        <div className="max-w-5xl mx-auto px-8" >
-            <HoverEffect items={projects}  />
+        <div className="max-w-5xl mx-auto px-8 gap-[200px] bg-white" >
+            <HoverEffect items={projects} className={"bg-white"} />
         </div>
     );
 }

@@ -1,4 +1,5 @@
 "use client"
+import Floatingnav from "@/common/Floatingnav";
 import { HoverEffect } from "../ui/card-hover-effect"
 
 export const NewHeader = () => {
@@ -33,12 +34,22 @@ export const NewHeader = () => {
     ];
 
     return (
-        <div className=" bg-black">
 
-            <div className="max-w-[1000px] mx-auto px-8" >
-                <HoverEffect items={projects} />
+        <>
+
+            <div className="w-full h-full">
+
+
+                <Floatingnav />
             </div>
-        </div>
+
+        </>
+        // <div className=" bg-black">
+
+        //     <div className="max-w-[1000px] mx-auto px-8 h-[186px]" >
+        //         <HoverEffect items={projects} />
+        //     </div>
+        // </div>
 
 
     )
