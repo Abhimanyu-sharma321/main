@@ -25,25 +25,43 @@ export const Header = () => {
   return (
     <>
 
-      <div className="flex bg-[#8cc0e9] text-white  rounded-sm shadow shadow-slate-800 gap-80 h-[100px] p-7 cursor-pointer font-semibold">
+      <div className="flex bg-[#8cc0e9] text-white  rounded-sm shadow shadow-slate-800 gap-72 h-[100px] p-7 cursor-pointer font-semibold ">
 
-        <div>
-          <Link href={"/"}>
+        <div className=" hover:scale-150 translate-x-6  ">
+          <Link href={"/"} >
             Home
           </Link>
 
         </div>
-        <Link href={"/allproductpage"}>
-          products
-        </Link>
-        <Link href={"/about"}>
-          About Us
-        </Link>
+        <div className=" hover:scale-150 translate-x-6">
 
-        <Link href={"/cart"}>
-          Cart
-        </Link>
-        <div>MyProfile </div>
+          <Link href={"/allproductpage"}>
+            products
+          </Link>
+
+        </div>
+        <div className=" hover:scale-150 translate-x-6">
+
+          <Link href={"/about"}>
+            About Us
+          </Link>
+        </div>
+        <div className=" hover:scale-150 translate-x-6">
+
+          <Link href={"/cart"}>
+            Cart
+          </Link>
+        </div>
+        <div className=" hover:scale-150 translate-x-6">
+
+          <Link href={"/cart"}>
+            SignUp
+          </Link>
+        </div>
+
+        {/* <Link href={"/profile"}>
+          MyProfile
+        </Link> */}
 
       </div >
     </>

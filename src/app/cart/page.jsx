@@ -32,38 +32,20 @@ const page = () => {
                         ))
                     }
                 </div>
-
-
-
-
-
-                <div className='mt-[500px] ml-[900px] mb-[50px]'>
-                    <div className='shadow ' >
-                        <h2>Order Summary</h2>
-                        <div className='flex gap-[90px]'>
-                            <h2>Price</h2>
-                            <p>900$</p>
-                        </div>
-
-                        <div className='flex gap-[90px]'>
-                            <h1>ShippingEstimate</h1>
-                            <h1>1500$</h1>
-                        </div>
-                    </div>
-                </div>
-
-
             </section >
 
 
 
-            <div className='flex gap-44 mt-3 ml-96 mb-10'>
+
+
+
+            {/* <div className='flex gap-44 mt-3 ml-96 mb-10'>
                 <Link href={"/"}>
-                    <button className='w-80 h-20 rounded-md bg-sky-900 text-white font-bold hover:bg-green-600  hover:text-white ' onMouseEnter={() => setName("<<<-------Continue Shopping")} onMouseLeave={() => setName("")}> {name}</button  >
-                </Link>
+                    <button className='w-80 h-20 rounded-md bg[#020f1a]' onMouseEnter={() => setName("<<<-------Continue Shopping")} onMouseLeave={() => setName("")}> {name}</button  >
+                </Link> 
                 <button className='w-80 h-20 rounded-md bg-sky-900 text-white font-bold hover:bg-slate-800  hover:text-white ' onClick={() => handleCheckout()}>ChecketOut</button  >
 
-            </div>
+            </div> */}
 
         </>
 

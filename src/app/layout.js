@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/common/header/header";
 import Footer from "@/common/Footer/footer";
 import { NewHeader } from "@/components/newheader/newheader";
+import SideCart from "@/components/sidecart/SideCart";
 
 
 export default function RootLayout({ children }) {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body
       >
         <Header />
+        <SideCart />
         {children}
         <Footer />
       </body>
