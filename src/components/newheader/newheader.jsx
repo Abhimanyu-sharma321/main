@@ -37,7 +37,7 @@ export const NewHeader = () => {
 
         <>
 
-            <div className="w-full h-full">
+            <div className="w-[1800px]  border bg-sky-50" >
 
 
                 <Floatingnav />

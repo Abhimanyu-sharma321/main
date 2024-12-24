@@ -14,12 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
-        {/* <Header /> */}
-
-
-        <NewHeader />
-
-
+        <Header />
         {children}
         <Footer />
       </body>
