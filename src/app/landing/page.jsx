@@ -79,7 +79,7 @@ const Landing = () => {
             </section >
 
 
-            <section className="container w-full  h-full flex mt-10 ml-[200px]    shadow-xl border mb-16  ">
+            <section className="container w-full  h-full flex mt-10 ml-[200px]  border mb-16  ">
 
                 <div className=" h-auto   w-1/2  ">
                     <Image src={image} width={600} className="p-4 mr-1" />
