@@ -46,7 +46,7 @@ const Allproductpage = () => {
 
 
         <div className="w-full h-full  grid grid-cols-3 p-32 ">
-          {_ALL_PRODUCT_IMAGES.map((product, i) => (
+          {_ALL_PRODUCT_IMAGES?.map((product, i) => (
             <figure className="p-20 " key={i + 1}
               onClick={() => handleClick(product)}
 

@@ -51,8 +51,8 @@ const Floatingnav = () => {
         },
     ];
     return (
-        (<div className="flex items-center justify-center w-full h-full border-border-black p-16    ">
-            <FloatingDock
+        (<div className="flex items-center justify-center w-[1200px] h-full border-border-black p-16    ">
+            <FloatingDock desktopClassName={"w-[1800px] gap-[200px] bg-[#8cc0e9] h-[90px]"}
                 // only for demo, remove for production
                 mobileClassName="translate-y-20"
                 items={links} />

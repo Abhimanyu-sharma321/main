@@ -107,3 +107,12 @@
 .isFluidWidth {
   width: 600px;
 }
+
+
+body{
+  background-color: white;
+}
+
+iframe{
+  background-color: white;
+}

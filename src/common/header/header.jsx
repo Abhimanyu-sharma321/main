@@ -24,31 +24,28 @@ export const Header = () => {
   // });
   return (
     <>
-      {/* <div className={`${location.pathname === "/" ? "bg-black text-white" : "bg-black"}`}>
-                <Floatingnav />
-            </div> */}
-      <div className="bg-[#040200] text-white  rounded-sm shadow shadow-slate-800 ">
-        <header className="ml-16 ">
-          <nav className="flex gap-72  w-[900px]">
-            <Link href={"/"}>
-              <Image src={logo} alt="logosss" width={200} height={400} />
-            </Link>
 
-            <div className={`${same_Class}`}>
-              <Link href={"/allproductpage"}>Shop</Link>
-            </div>
-            <Link href={"/cart"}>
-              <div className={`${same_Class}`}
+      <div className="flex bg-[#8cc0e9] text-white  rounded-sm shadow shadow-slate-800 gap-80 h-[100px] p-7 cursor-pointer font-semibold">
 
-              >
-                <cartLogo />
-                {product_Quantity}</div>
-            </Link>
+        <div>
+          <Link href={"/"}>
+            Home
+          </Link>
 
+        </div>
+        <Link href={"/allproductpage"}>
+          products
+        </Link>
+        <Link href={"/about"}>
+          About Us
+        </Link>
 
-          </nav>
-        </header>
-      </div>
+        <Link href={"/cart"}>
+          Cart
+        </Link>
+        <div>MyProfile </div>
+
+      </div >
     </>
   );
 };

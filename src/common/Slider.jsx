@@ -73,7 +73,7 @@ export const ProductSlider = ({ image, indicators, imagesrc = {} }) => {
     }
     let productSliders = JSON.parse(localStorage.getItem("singleProducts"))
 
-    let images = productSliders.sliderImages.map((item => item
+    let images = productSliders?.sliderImages?.map((item => item
     ))
     console.log(images, "images")
 

@@ -1,11 +1,17 @@
 "use client"
+import Floatingnav from "@/common/Floatingnav";
 import { HoverEffect } from "../ui/card-hover-effect"
 
 export const NewHeader = () => {
 
 
     const projects = [
-
+        // {
+        //     title: "Home",
+        //     // description:
+        //     // "World-class audio solutions for creators, fans and installers. Enjoy distortion-free sound that powers professional spaces, from recording studios to concert venues and sports stadiums.",
+        //     link: "/",
+        // },
         {
             title: "Shop",
             // description:
@@ -28,12 +34,22 @@ export const NewHeader = () => {
     ];
 
     return (
-        <div className=" bg-black">
 
-            <div className="max-w-5xl mx-auto px-8" >
-                <HoverEffect items={projects} />
+        <>
+
+            <div className="w-[1800px]  border bg-sky-50" >
+
+
+                <Floatingnav />
             </div>
-        </div>
+
+        </>
+        // <div className=" bg-black">
+
+        //     <div className="max-w-[1000px] mx-auto px-8 h-[186px]" >
+        //         <HoverEffect items={projects} />
+        //     </div>
+        // </div>
 
 
     )

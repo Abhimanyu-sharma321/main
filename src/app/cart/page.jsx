@@ -16,16 +16,18 @@ const page = () => {
     return (
         <>
             <section className='w-full h-full  p-24 ' >
-                <h2 className='ml-[750px]'>Your Cart</h2>
+                <h2 className='ml-[750px]  font-bold leading-9 '>Your Cart</h2>
 
-                <div className=' container  mt-16  shadow-sm '>
+                <div className='container'>
                     {
                         getCartData?.map((products) => (
-                            <div className='flex gap-80 w-[1200px] h-[300px] shadow-xl border border-[2px decoration-solid]    mt-10'>
+                            <div className=' container flex gap-[100px] w-[1200px] h-[300px]   border mb-6   '>
                                 <Image src={products.image} width={200} height={100}  ></Image>
                                 <div className='mt-[80px]'>{products.name}</div>
                                 <div className='mt-[80px]' >{products.price}</div>
-                                <button onClick={() => handleRemove(products)}>Remove</button>
+                                <div>
+                                    <button className='mt-[80px]' onClick={() => handleRemove(products)}>Remove</button>
+                                </div>
                             </div>
                         ))
                     }

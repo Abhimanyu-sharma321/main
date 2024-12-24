@@ -1,5 +1,5 @@
 import brandlogo from "../assets/Logos/ applechiplogo.png"
-import { apple14, apple15, apple16, apple16Pro, CashLogo, DeliveryLogo, FreeLogo, gamingheadPhone1, iphone142, iphone143, iphoneSe, jackandjones, jackandjones2, jackandjones3, logo, pumashoe1, returnLogo, SecureLogo, trending1 } from "../assets/Index";
+import { apple14, apple15, apple16, apple16Pro, CashLogo, DeliveryLogo, FreeLogo, gamingheadPhone1, iphone142, iphone143, iphoneSe, jackandjones, jackandjones2, jackandjones3, logo, pumashoe1, returnLogo, SecureLogo, trackPant1, trackPant2, trackPant3, trackPant4, trending1 } from "../assets/Index";
 
 /************************************************FLOATING-MENUEBAR*****************************************************************************************************************************************/
 import {
@@ -410,6 +410,158 @@ export const _ACCESSORIES = [{
 
 
 
+
+export const LandingPageProducts = [
+
+
+    {
+
+        id: 1,
+        name: "Evolutions  Pants",
+        description: "The evolution of jeans: men's casual travel pants made perfect for travel, outdoors and everyday activities.",
+        price: "7, 900.00",
+        image: trackPant1,
+        Color: 'Black',
+
+        sliderImages: [
+            {
+                original: "https://westernrise.com/cdn/shop/files/020322-WR-ECOM-SPRING-2545copy_fe4b13a0-b456-4752-a189-53a739674050.jpg?v=1694647834&width=128",
+                thumbnail: "https://westernrise.com/cdn/shop/files/020322-WR-ECOM-SPRING-2545copy_fe4b13a0-b456-4752-a189-53a739674050.jpg?v=1694647834&width=800"
+
+            },
+
+            {
+                original: "https://westernrise.com/cdn/shop/files/020322-WR-ECOM-SPRING-2565copy_8dbbaf55-c8ce-44f5-a4ee-1ce1e68e4efc.jpg?v=1694647836&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/files/020322-WR-ECOM-SPRING-2565copy_8dbbaf55-c8ce-44f5-a4ee-1ce1e68e4efc.jpg?v=1694647836&width=128"
+            },
+
+            {
+                original: "https://westernrise.com/cdn/shop/files/020322-WR-ECOM-SPRING-2549copy_d7af6d70-bd38-42aa-8b0e-7b818397dbf8.jpg?v=1694647836&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/files/020322-WR-ECOM-SPRING-2549copy_d7af6d70-bd38-42aa-8b0e-7b818397dbf8.jpg?v=1694647836&width=128"
+            },
+
+
+            {
+                original: "https://westernrise.com/cdn/shop/files/020322-WR-ECOM-SPRING-2562copy_9bd6edf5-2815-472d-8b3e-4c86284d246b.jpg?v=1694647837&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/files/020322-WR-ECOM-SPRING-2562copy_9bd6edf5-2815-472d-8b3e-4c86284d246b.jpg?v=1694647837&width=128"
+            },
+
+
+
+        ],
+
+    },
+
+    {
+
+        id: 2,
+        name: "Diversion Pant Slim",
+        description: "Meet your new go-to travel pants and experience unparalleled versatility, comfort, and style for the one-bag traveler.",
+        price: "9,100.00",
+        image: trackPant2,
+        Color: 'Black',
+
+        sliderImages: [
+            {
+                original: "https://westernrise.com/cdn/shop/products/022020_WesternRise-ECOM_0156.jpg?v=1616784149&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/products/022020_WesternRise-ECOM_0156.jpg?v=1616784149&width=128"
+
+            },
+
+            {
+                original: "https://westernrise.com/cdn/shop/products/022020_WesternRise-ECOM_0166.jpg?v=1616784149&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/products/022020_WesternRise-ECOM_0166.jpg?v=1616784149&width=128"
+            },
+
+            {
+                original: "https://westernrise.com/cdn/shop/products/022020_WesternRise-ECOM_0150.jpg?v=1616784149&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/products/022020_WesternRise-ECOM_0150.jpg?v=1616784149&width=128"
+            },
+
+
+
+
+
+
+        ],
+
+    },
+
+    {
+
+        id: 3,
+        name: "Limitless Merino Button-Down",
+        description: "Elevate your travel attire with a game-changing travel button-down shirt that offers all-day comfort.",
+        price: "7, 900.00",
+        image: trackPant3,
+        Color: 'Black',
+
+        sliderImages: [
+            {
+                original: "https://westernrise.com/cdn/shop/products/402A6637.jpg?v=1713127672&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/products/402A6637.jpg?v=1713127672&width=128"
+
+            },
+
+            {
+                original: "https://westernrise.com/cdn/shop/products/402A6654.jpg?v=1713127672&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/products/402A6654.jpg?v=1713127672&width=128"
+            },
+
+            {
+                original: "https://westernrise.com/cdn/shop/products/402A6630.jpg?v=1713127672&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/products/402A6630.jpg?v=1713127672&width=128"
+            },
+
+
+            {
+                original: "https://westernrise.com/cdn/shop/products/402A6634.jpg?v=1713127672&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/products/402A6634.jpg?v=1713127672&width=128"
+            },
+
+
+
+        ],
+
+    },
+    {
+
+        id: 4,
+        name: "Venture Hoodie",
+        description: "Your perfect travel layer reinvented. Structured packability, and extended odor resistance and durability for seamless comfort on the go.",
+        price: "7, 900.00",
+        image: trackPant4,
+        Color: 'Black',
+
+        sliderImages: [
+            {
+                original: "https://westernrise.com/cdn/shop/files/402A2928.jpg?v=1712419242&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/files/402A2928.jpg?v=1712419242&width=128"
+
+            },
+
+            {
+                original: "https://westernrise.com/cdn/shop/files/402A2935.jpg?v=1712419306&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/files/402A2935.jpg?v=1712419306&width=128"
+            },
+
+            {
+                original: "https://westernrise.com/cdn/shop/files/402A2932.jpg?v=1712419306&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/files/402A2932.jpg?v=1712419306&width=128"
+            },
+
+
+            {
+                original: "https://westernrise.com/cdn/shop/files/402A2939.jpg?v=1712419306&width=800",
+                thumbnail: "https://westernrise.com/cdn/shop/files/402A2939.jpg?v=1712419306&width=128"
+            },
+
+
+
+        ],
+    }
+
+]
 
 /****************************************************Header-Floating-Menues*********************************************************************************************************************/
 
