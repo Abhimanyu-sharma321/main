@@ -20,7 +20,7 @@ const Landing = () => {
         <>
             <section>
                 <div>
-                    <iframe src="//westernrise.com/cdn/shop/videos/c/vp/91ad1e69ace34a17832e4303be298a38/91ad1e69ace34a17832e4303be298a38.HD-1080p-2.5Mbps-29000830.mp4?v=0" className="w-[1600px] h-[900px] ml-36"></iframe>
+                    <iframe src="//westernrise.com/cdn/shop/videos/c/vp/91ad1e69ace34a17832e4303be298a38/91ad1e69ace34a17832e4303be298a38.HD-1080p-2.5Mbps-29000830.mp4?v=0" on className="w-[1600px] h-[900px] ml-36"></iframe>
 
                 </div>
             </section>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import "react-slideshow-image/dist/styles.css";
 
-import { useState } from "react";
+import { use, useEffect, useState } from "react";
 import { _HOME_PRODUCT_IMAGES, LandingPageProducts } from "./productdetails";
 import UseAddToCartHook from "../../Hooks/useAddtocartHook";
 import UseSingleProductHook from "../../Hooks/SingleProductHok";
@@ -14,6 +14,7 @@ import SideCart from "@/components/sidecart/SideCart";
 import Landing from "./landing/page";
 import { FirstComponent } from "@/components/LandingPage/First";
 import { landingImage } from "@/assets/Index";
+import axios from "axios";
 // import IDmeButton from "@/components/idme/Idme";
 
 export function Home() {
@@ -26,10 +27,16 @@ export function Home() {
   const [mouseEnter, setMouseEnter] = useState(false);
 
 
+  const [prdData, setPrdData] = useState([])
+
   const _IDME_LINK = "https://groups.id.me/?&scopes=military,responder&client_id=8d2bd46045ef66793c589f9fc7d0a0b1&redirect_uri=https://perfectlyposh.vercel.app/idme/callback&response_type=code&type=button&source=idme_widget_old&current_url=http://localhost:3000/checking"
   console.log(window.location.pathname, "pathname")
 
   let pathName = window.location.pathname
+ 
+
+
+
 
   return (
     <>
